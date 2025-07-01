@@ -195,7 +195,30 @@ export function Rules() {
         ganham +2 para todos seus atributos, PV e Inventório.</p>
         
         <h2>Usar Magias</h2>
-        <p>blah blah</p>
+        <p>Algumas classes podem lançar magias. Elas tem Dados de Magia (DM)</p>
+
+        <p><strong>Lançando Magias:</strong> Quando for lançar uma magia, escolha quandos DMs quer investir nela.
+        O resultado vai depender no número de dados e a soma deles.</p>
+
+        <p>Se um DM rolar 1, 2 ou 3, você não o perde. Caso contrário, você perde ele até ter um Descanso Completo.
+        Você não pode lançar magias sem DMs.</p>
+
+        <p>Cada vez que rolar dois números iguais, você fica mais próximo de uma <strong>Catástrofe</strong>.</p>
+
+        <p><strong>Catástrofe:</strong> Cada vez que rola dois números iguais em um DM, você ganha 1 ponto de Destruição.
+        Role um d20. Se rolar igual ou abaixo de seu pontos de Destruição, você ativa uma Catástrofe.</p>
+
+        <p><strong>Sigilos:</strong> Algumas magias mencionam um <strong>Sigilo</strong>. É o seu símbolo único.
+        Uma magia lançada com um Sigilo leva 10 minutos para lançar, mas dura para sempre (a menos que alguém deliberadamente
+        a cancele).</p>
+
+        <p>Você tem tantos Sigilos quanto níveis.</p>
+        <!-- 
+Sigil
+Some spells mention a Sigil. It’s your unique symbol. 
+A spell cast with a Sigil takes 10 minutes to cast, but lasts forever. 
+You can have as many Sigils up as your level.
+-->
         
         <h2>Condições</h2>
         <p>blah blah</p>`;
