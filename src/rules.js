@@ -122,11 +122,24 @@ export function Rules() {
         entrar em um novo lugar, explorar um lugar ou descansar.</p>
         
         <h2>Armas Corpo-a-corpo</h2>
-        <p>blah blah</p>
-        <!-- -->
+        <p><strong>Improvisada (garrafa, cadeira):</strong> 1d4 de dano, pode ser lançada.</p>
+        <p><strong>Leve (adaga, dardo):</strong> 1d6 de dano, pode ser lançada, pode ser usada na mão não-principal.</p>
+        <p><strong>Média (espada, machado):</strong> 1d8 de dano, 1d10 com duas mãos.</p>
+        <p><strong>Pesada (espada longa, machado de guerra):</strong> 1d12 de dano, precisa de duas mãos.</p>
+        <p><strong>Mastros (lanças, alabardas):</strong> 1d8 de dano, precisa de duas mãos, dá vantagem para desviar de ataques corpo-a-corpo de criaturas que você atingiu nesse turno.</p>
+
+        <p>Se usar duas armas, quando rolar acima de 20 com sua arma principal, também pode fazer um teste de ataque com a outra mão.</p>
         
         <h2>Armas a Distância</h2>
-        <p>blah blah</p>
+        <p><strong>Leve (dardos):</strong> 1 de dano, pode atacar duas vezes.</p>
+        <p><strong>Média (funda):</strong> 1d4 de dano.</p>
+        <p><strong>Pesada (arcos):</strong> 1d6 de dano, precisa de duas mãos.</p>
+        <p><strong>Mecânica (besta, musquete):</strong> 1d12 de dano, precisa de duas mãos e recarregar leva uma ação.</p>
+
+        <h2>Armadura</h2>
+        <p>Cada ponto de Armadura reduz dano físico em 1, até um total de 3 (armadura completa). Um escudo pode te dar 1 ponto 
+        de redução de dano a mais.</p>
+        <p>Você não pode nadar, pular ou fazer ações furtivas se estiver com armadura completa.</p>
         
         <h2>Tesouros</h2>
         <p>blah blah</p>
