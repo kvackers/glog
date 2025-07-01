@@ -75,20 +75,55 @@ export function Rules() {
         <p>Esses espaços podem ser preenchidos com Perícias, Níveis de Classes, Magias, Seguidores e Crenças. 
         Se carregar mais que sua capacidade, você fica <strong>Atordoado</strong>. Você só pode remover coisas de sua Psique
         quando <strong>Festejar</strong>.</p>
-
-        <!-- -->
         
         <h2>Combate</h2>
-        <p>blah blah</p>
+        <p><strong>Ordem do Turno:</strong> Você vai antes dos monstros, a menos que eles o tenha surpreendido. Quando em grupo,
+        quem vai primeiro fica a critério dos jogadores.</p>
+
+        <p><strong>Sua Rodada:</strong> Você pode andar pra perto, falar e fazer uma outra ação, como lançar uma magia ou atacar.</p>
+
+        <p><strong>Atacar:</strong> O GM vai dizer se o alvo é fácil, normal ou díficil de atingir. Role Destreza.
+        Se tiver sucesso, role o dano de sua arma e o GM vai subtrair da vida do monstro. Se o monstro tiver 0 ou menos PV, ele morre.</p>
+        
+        <p>Se o ataque rolar 20, vai dar o dobro do dano.</p>
+
+        <p><strong>Defender:</strong> O GM vai dizer se o ataque é fácil, normal ou difícil de esquivar. Role Destreza.
+        Se rolar 1, toma o dobro do dano.</p>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Exemplo: Combate</strong></summary>
+        
+        <p>Bruno está lutando com um troll perigoso. Ele vai primeiro. No seu turno, ele grita para Alice deixar de covardia,
+        ataca o troll com sua espada, e vai para a borda de um precípio, tentando atrair o monstro para uma posição precária.</p>
+
+        <p>O GM fala para ele fazer um ataque normal, então ele rola 1d20 + DES esperando conseguir mais que 15. O resulto é 18,
+        então o ataque é um sucesso! A espada dá 1d8 de dano ao troll, que entra em fúria.</p>
+
+        <p>Agora é a vez do troll! O GM anuncia que o monstro persegue Bruno até a borda do precípio e tenta bater nele com sua
+        clava. Ela precisa desviar! Ela rola 1d20 + DES e consegue 15! Não é o suficiente para desviar do troll.</p>
+
+        <p>O GM rola o dano do monstro: 8. Bruno perde esse tanto de pontos de vida, chega a 0 PV e começa a <strong>Morrer</strong>.</p>
+        </details>
         
         <h2>Morte, Cicatrizes, Traumas e Cura</h2>
         <p>blah blah</p>
-        
+
         <h2>Exploração</h2>
-        <p>blah blah</p>
+        <p>Tempo é gerenciado diferente dentro de masmorras ou quando você está viajando a céu aberto.</p>
+
+        <p>Masmorras são divididas em salas. Dentro de uma masmorra, qualquer ação que valha a pena, como investigar uma
+        sala ou lutar dura 10 minutos. Você rola apra ver se suas tochas apagam a cada 10 minutos, e o GM rola por encontros
+        aleatórios a cada 30 minutos.</p>
+
+        <p>Você pode cruzar 10 salas seguras que já tenha explorado por 10 minutos, ou 3 se quiser ser discreto.</p>
+
+        <p>O mundo fora de uma masmorra (os Ermos) é dividido em hexágonos. Qualquer ação que valha a pena como atravessar
+        ou explorar um hexágono dura 6 horas do dia (Madrugada, Dia, Tarde e Noite). O GM rola para encontros sempre que você
+        entrar em um novo lugar, explorar um lugar ou descansar.</p>
         
         <h2>Armas Corpo-a-corpo</h2>
         <p>blah blah</p>
+        <!-- -->
         
         <h2>Armas a Distância</h2>
         <p>blah blah</p>
