@@ -12,27 +12,37 @@ export function Rules() {
         pode pedir que você role um dado de 20 lados (d20) e adicione um número da sua ficha de personagem para ver se
         a personagem tem sucesso na ação.</p>
 
-        <p>Se a situação for <strong>fácil</strong>, o resultado precisa ser maior que 10 para ter sucesso. Se for normal, tem que ser maior que 15,
-        e se for difícil, tem que ser maior que 20.</p>
+        <p>Se a situação for <strong>fácil</strong>, o resultado precisa ser maior que 10 para ter sucesso. 
+        Se for <strong>normal</strong>, tem que ser maior que 15, e se for <strong>difícil</strong>, tem que ser maior que 20.</p>
 
-        <!-- 
-        The referee describes a situation and you tell what your character would do in that context.
-        The referee might ask you to roll a d20-faced die and add a number from your character sheet to see
-        if your character succeeds in its action.
-        
-        If the situation is easy, the result must beat 10 to succeed, if it’s normal, it has to beat 15, and if it’s hard, 20.
-        Either way, the referee describes the new situation, and so on.
-
-        Sometimes, the referee might tell you that the situation gives you advantage or disadvantage.
-        Rolling with advantage means you roll twice and choose the best result. Disadvantage is the opposite.
-
-        That’s it! -->
+        <p>Às vezes, o GM pode dizer que a situação te dá <strong>vantagem</strong> ou <strong>desvantagem</strong>.
+        Rolar com vantagem significa que você rola duas vezes e escolhe o melhor resultado.
+        Já com desvantagem, você rola duas vezes e escolhe o pior resultado.</p>
         
         <h2>Criando uma Personagem</h2>
-        <p>blah blah</p>
+        <p>Você tem três atributos principais:
+        <strong>Força (FOR)</strong>, <strong>Destreza (DES)</strong> e <strong>Vontade (VON)</strong>. 
+        Role <strong>1d6 + 2</strong> para determinar o valor de cada.</p>
+
+        <p>Força determina sua resistência e quanto você consegue carregar,
+        Destreza determina sua habilidade em combate e Vontade determina sua resistência a adversidade e quantos poderes
+        você pode ter.</p>
+
+        <p>Você tem tantos <strong>Pontos de Vida (PV)</strong> quanto sua FOR.</p>
+
+        <p>Você tem um <strong>Inventório</strong> tão grande quanto o dobro de sua FOR,
+        e uma <strong>Psique</strong> tão grande quanto o dobre de sua VON.</p>
+
+        <p>Escolha uma <strong>Classe</strong>, adicione o equipamento inicial ao seu Inventório e as <strong>Perícias</strong>
+        e <strong>Magias</strong> (se houverem) à sua Psique. Tome nota das Habilidades.</p>
+
+        <p>Dê à sua personagem 1 ou 2 <strong>Crenças</strong>, que você deve adicionar à sua Psique. Crenças são qualquer coisa
+        que impulsione a personagem a ir se aventurar: coisas pelas quais vale a pena morrer.</p>
         
         <h2>Perícias e Crenças</h2>
         <p>blah blah</p>
+
+        <!-- -->
         
         <h2>Inventório e Psique</h2>
         <p>blah blah</p>
