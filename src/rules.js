@@ -40,12 +40,43 @@ export function Rules() {
         que impulsione a personagem a ir se aventurar: coisas pelas quais vale a pena morrer.</p>
         
         <h2>Perícias e Crenças</h2>
-        <p>blah blah</p>
+        <p>Uma <strong>Perícia</strong> pode ser qualquer conhecimento, e é guardada na sua Psique. Quando pedirem para rolar uma ação,
+        se uma Perícia puder plausivelmente te ajudar, o desafio fica mais fácil.
+        Testes difíceis se tornam normais, normais se tornam fáceis e fáceis viram sucessos.</p>
 
-        <!-- -->
+        <details class="pb-3">
+        <summary class="header"><strong>Exemplo: Usando uma Perícia</strong></summary>
+        
+        <p>Alice tem uma perícia chamada "Moradora do Pântano". Quando tenta barganhar com um troll, o GM pede que ela faça um
+        teste de Vontade difícil. Mas ela argumenta que sua Perícia iria fazê-la mais amigável ao monstro. 
+        O GM concorda e agora Alice faz um teste normal de Vontade, só precisando rolar 15 invés de 20.</p>
+        </details>
+
+        <p>Uma <strong>Crença</strong> é qualquer coisa pela qual valha a pena morrer, e é guardada na sua Psique.
+        Se você tomar um risco mortal por uma Crença durante o jogo, você vai ser recompensado quando <strong>Festejar</strong>.</p>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Exemplo: Usando uma Crença</strong></summary>
+        
+        <p>Bruno está lutando com um troll perigoso. Alice decide sair de seu esconderijo para ajudá-lo pois sua personagem
+        acredita em altruismo. No fim da anvetura, Alice pode remover um Trauma de sua Psique ou ganhar um novo seguidor
+        que ficou impressionado pela suas Crenças.</p>
+    
+        </details>
         
         <h2>Inventório e Psique</h2>
-        <p>blah blah</p>
+        <p>Seu <strong>Inventório</strong> tem tantos espaços quanto o dobro de sua Força.</p>
+
+        <p>Esses espaços podem ser preenchidos com objetos. Itens pequenos como poços, adagas e munição podem ser agrupados
+        no seu Inventório em grupos de 10. Se carregar mais que sua capacidade, você fica <strong>Caído</strong>.</p>
+
+        <p>Sua <strong>Psique</strong> tem tantos espaços quanto o dobro de sua Vontade.</p>
+
+        <p>Esses espaços podem ser preenchidos com Perícias, Níveis de Classes, Magias, Seguidores e Crenças. 
+        Se carregar mais que sua capacidade, você fica <strong>Atordoado</strong>. Você só pode remover coisas de sua Psique
+        quando <strong>Festejar</strong>.</p>
+
+        <!-- -->
         
         <h2>Combate</h2>
         <p>blah blah</p>
