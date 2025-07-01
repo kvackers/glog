@@ -1,0 +1,10 @@
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    font-family: "Calibri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
