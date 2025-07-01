@@ -142,16 +142,36 @@ export function Rules() {
         <p>Você não pode nadar, pular ou fazer ações furtivas se estiver com armadura completa.</p>
         
         <h2>Tesouros</h2>
-        <p>blah blah</p>
+        <p>Cada objeto que você encontra tem um certo valor dado pelo GM:</p>
+        <ul>
+            <li>Mundano (uma bolsa de moedas de cobre)</li>
+            <li>Útil (uma bolsa de moedas de prata)</li>
+            <li>Valioso (uma bolsa de moedas de ouro)</li>
+            <li>Tesouro (uma bolsa de moedas de pedras preciosas)</li>
+        </ul>
+
+        <p>Uma bolsa de moedas ocupa um espaço de Inventório.</p>
+        <p>Quando estiver em uma cidade, você pode trocar items por outros na mesma categoria (à discrição do mestre,
+        só dizer o que você está procurando).</p>
+        <p>Alternativamente, 4 objetos de uma dada categoria tem um valor aproximado de um objeto na próxima categoria.</p>
         
         <h2>Progressão</h2>
-        <p>blah blah</p>
+        <p>Você sobe de nível quando gasta o equivalente de 
+        um <strong>Tesouro</strong> ao <strong>Festejar</strong>. Quando subir de nível:</p>
+        <ul>
+            <li>Aumente seu PV em +2 (a um máximo de 20).</li>
+            <li>Aumente um de seus atributos em 1 (a um máximo de 10).</li>
+            <li>Ganhe o próximo nível de sua classe <strong>ou</strong> ganhe o primeiro nível (A) de outra classe (tendo 4 templates no máximo).</li>
+        </ul>
         
         <h2>Festejar!</h2>
         <p>blah blah</p>
         
         <h2>Seguidores</h2>
-        <p>blah blah</p>
+        <p>Você ganha <strong>Seguidores</strong> ao Festejar, e um Seguidor ocupa um espaço de Psique.</p>
+        <p>Role 1d6 para cada um dos atributos deles. Seguidores podem carregar 3 objetos e tem 2 PV.
+        Eles podem ganhar uma Classe do mesmo jeito que uma personagem normal, e se o fizerem,
+        ganham +2 para todos seus atributos, PV e Inventório.</p>
         
         <h2>Usar Magias</h2>
         <p>blah blah</p>
