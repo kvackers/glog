@@ -106,7 +106,26 @@ export function Rules() {
         </details>
         
         <h2>Morte, Cicatrizes, Traumas e Cura</h2>
-        <p>blah blah</p>
+        <p><strong>Morrer:</strong> Quando você atingir 0 PV, você fica Caído e começa a morrer.
+        Se tomar dano enquanto você está Morrendo, você morre. Se você recuperar qualquer quantidade de PV enquanto estiver
+        morrendo, você para de Morrer.</p>
+
+        <p>Nas suas próximas 3 rodadas, você pode tentar <strong>Estabilizar</strong> invés de fazer outra coisa. Faça um teste
+        difícil de Força. Em sucesso, você ganha 1 PV. Um aliado pode gastar a rodada dele fazendo um teste difícil de Vontade
+        para a mesma coisa, se conseguir te alcançar e tiver Perícias ou Ferramentas apropriadas.</p>
+        
+        <p>Se você se recuperar de Morrer, você ganha uma Cicatriz. Se você morrer, todos seus companheiros ganham um Trauma.</p>
+        
+        <p><strong>Cicatrizes:</strong> Cicatrizes ocupam espaços de Inventório e só podem ser removidos por meios mágicos.
+        Anote o que causou a Cicatriz. Enquanto você a tiver, você tem vantagem contra aquela coisa.</p>
+        
+        <p><strong>Traumas:</strong> Traumas ocupam espaços de Psique e só podem ser removidos ao arriscar sua própria vida
+        por uma de suas Crenças. Anote o que causou o Trauma. Enquanto você o tiver, você tem desvantagem contra aquela coisa.</p>
+        
+        <p><strong>Descanso Curto:</strong> Um descanso de 30 minutos recupera 1 dado de vida e consome 1 ração ou 1 dose de água.</p>
+        
+        <p><strong>Descanso Longo:</strong> Um descanso de 8 horas recupera todos os PVs e consome 1 ração por pessoa.
+        Descansos longos precisam de abrigo e calor.</p>
 
         <h2>Exploração</h2>
         <p>Tempo é gerenciado diferente dentro de masmorras ou quando você está viajando a céu aberto.</p>
@@ -151,8 +170,10 @@ export function Rules() {
         </ul>
 
         <p>Uma bolsa de moedas ocupa um espaço de Inventório.</p>
+
         <p>Quando estiver em uma cidade, você pode trocar items por outros na mesma categoria (à discrição do mestre,
         só dizer o que você está procurando).</p>
+
         <p>Alternativamente, 4 objetos de uma dada categoria tem um valor aproximado de um objeto na próxima categoria.</p>
         
         <h2>Progressão</h2>
