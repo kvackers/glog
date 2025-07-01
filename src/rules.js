@@ -213,13 +213,38 @@ export function Rules() {
         a cancele).</p>
 
         <p>Você tem tantos Sigilos quanto níveis.</p>
-        <!-- 
-Sigil
-Some spells mention a Sigil. It’s your unique symbol. 
-A spell cast with a Sigil takes 10 minutes to cast, but lasts forever. 
-You can have as many Sigils up as your level.
--->
         
         <h2>Condições</h2>
-        <p>blah blah</p>`;
+        <ul>
+            <li class="pb-2"><strong>Assustado:</strong> Você não pode interagir com a fonte do medo até que tenha gasto 1 Turno inteiro sem a ver.
+            Role 1d6:
+            <ol>
+                <li>Segure o que estiver segurando.</li>
+                <li>Grite</li>
+                <li>Fique Caído</li>
+                <li>Paralise o aliado ou objeto mais próximo</li>
+                <li>Fuja</li>
+                <li>Fique Pasmo por um turno</li>
+            </ol></li>
+            <li class="pb-2"><strong>Atordoado:</strong> Você pode agir <strong>ou</strong> se mover na sua Rodada.</li>
+            <li class="pb-2"><strong>Caído:</strong> Combate corpo-a-corpo é difícil. Desviar de ataques a distância é fácil. Levantar usa todo seu movimento.</li>
+            <li class="pb-2"><strong>Cego:</strong> Todos os testes de Destreza são difíceis.</li>
+            <li class="pb-2"><strong>Confuso:</strong> Você pode agir <strong>ou</strong> se mover na sua Rodada.</li>
+            <li class="pb-2"><strong>Encantado:</strong> Você falha todos os testes contra o Encantador. Se atacar, machucar ou dizer algo ruim contra ele, tome 1d4 de dano psíquico.</li> 
+            <li class="pb-2"><strong>Envenenado:</strong> Desvantagem em todos os seus testes. Venenos específicos podem ter efeitos específicos.</li>         
+            <li class="pb-2"><strong>Exausto:</strong> Você pode agir <strong>ou</strong> se mover na sua Rodada.</li>
+            <li class="pb-2"><strong>Invisível:</strong> Atacar e desviar é fácil. Ninguém te vê.</li>
+            <li class="pb-2"><strong>Paralisado:</strong> Você não pode se mover. Role 1d6:
+            <ol>
+                <li>Você não consegue Respirar</li>
+                <li>Você não consegue mover uma perna. Se tomar dano, fique Caído.</li>
+                <li>Você não consegue mover uma perna. Se tomar dano, fique Caído.</li>
+                <li>Você não consegue mover o braço não principal. Desconsidere itens nele.</li>
+                <li>Você não consegue mover o braço principal. Desconsidere itens nele.</li>
+                <li>Um item que você veste ou está segurando está preso. Desconsidere o efeito dele.</li>
+            </ol></li>
+            <li class="pb-2"><strong>(Não) Respirando:</strong> Você pode segurar seu fôlego por tantas Rodadas quanto sua Força.
+            Se tomar dano, faço um teste de Força. Se falhar, você começa a Morrer.</li>       
+            <li class="pb-2"><strong>Pasmo:</strong> Você perde sua Rodada. Todos os testes são difíceis.</li>
+        </ul>`;
 }
