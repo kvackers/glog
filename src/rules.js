@@ -1,6 +1,5 @@
 import "https://esm.sh/preact@10.26.9/debug";
-import { h, render } from 'https://esm.sh/preact@10.26.9';
-import { useState } from 'https://esm.sh/preact@10.26.9/hooks';
+import { h } from 'https://esm.sh/preact@10.26.9';
 import htm from 'https://esm.sh/htm@3.1.1';
 
 const html = htm.bind(h);
