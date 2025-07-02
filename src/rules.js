@@ -329,7 +329,8 @@ export function Rules() {
         <p>Cada vez que rolar dois números iguais, você fica mais próximo de uma <strong>Catástrofe</strong>.</p>
 
         <p><strong>Catástrofe:</strong> Cada vez que rola dois números iguais em um DM, você ganha 1 ponto de Destruição.
-        Role um d20. Se rolar igual ou abaixo de seu pontos de Destruição, você ativa uma Catástrofe.</p>
+        Role um d20. Se rolar igual ou abaixo de seu pontos de Destruição, você ativa uma Catástrofe e reseta seus pontos
+        de Destruição.</p>
 
         <p><strong>Sigilos:</strong> Algumas magias mencionam um <strong>Sigilo</strong>. É o seu símbolo único.
         Uma magia lançada com um Sigilo leva 10 minutos para lançar, mas dura para sempre (a menos que alguém deliberadamente
