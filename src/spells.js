@@ -1,12 +1,46 @@
 import "https://esm.sh/preact@10.26.9/debug";
-import { h, render } from 'https://esm.sh/preact@10.26.9';
+import { h } from 'https://esm.sh/preact@10.26.9';
 import { useState } from 'https://esm.sh/preact@10.26.9/hooks';
 import htm from 'https://esm.sh/htm@3.1.1';
+import { SPELLS } from "./utils.js";
 
 const html = htm.bind(h);
 
-export function Spells() {
+function Spell({ spell }) {
+    const { name, warning, description, range, duration } = spell;
+
+    const rangeElem = range ? html`<p><strong>Alcance:</strong> ${range}</p>` : "";
+    const durationElem = duration ? html`<p><strong>Duração:</strong> ${duration}</p>` : "";
+    const warningElem = warning ? html`<p><em>${warning}</em></p>` : "";
+    const descriptionElems = description ? description.map(p => html`<p>${p}</p>`) : "";
+
     return html`
+        <details class="pb-3">
+            <summary class="header"><strong>${name}</strong></summary>
+            <div class="d-flex justify-content-between">
+                ${rangeElem}
+                ${durationElem}
+            </div>
+            ${warningElem}
+            ${descriptionElems}
+        </details>`;
+}
+
+export function Spells() {
+    const [spellUI, setSpellUI] = useState({ alpha: true })
+
+    const spellHeader = spellUI.alpha ? "Magias em ordem alfabética " : "Magias por Escola ";
+    const toggleSpellType = () => setSpellUI({ ...spellUI, alpha: !spellUI.alpha });
+
+    return html`
+        <div class="d-flex justify-content-between">
+            <h2>${spellHeader}</h2>
+            <button type="button" class="btn btn-outline-primary" onclick=${toggleSpellType}>🔄</button>
+        </div>
+        <p>Na descrição de magias, [dados] se refere ao número de DMs investidos e [soma] à soma desses dados
+        quando rolados.</p>
+        ${SPELLS.map(sp => html`<${Spell} spell=${sp} />`)}
+
         <h2>Catástrofe</h2>
         <p>Você mexeu com forças além das suas habilidades e eventualmente seus experimentos iam falhar.</p>
         
