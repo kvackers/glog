@@ -32,9 +32,13 @@ function App() {
 
     return html`
         <${Navbar} ui=${uiState} setUI=${setUIState} />
-        ${JSON.stringify(uiState)}
-        <br/>
-        <${Rules} />`;
+        <${Rules} />
+        <footer class="pb-3 text-center">
+            <a href="https://saltygoo.github.io/"
+               style="text-decoration: none; color: ${uiState.theme === "light" ? "#840000" : "#00FFDB"}">
+               Regras traduzidas e ligeiramente adaptas do GLoG Salty Goo
+            </a>
+        </footer>`;
 }
 
 render(
