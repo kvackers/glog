@@ -186,8 +186,101 @@ export function Rules() {
         </ul>
         
         <h2>Festejar!</h2>
-        <p>blah blah</p>
+        <p>Quando voltar à cidade, está na hora de gastar sua recompensa! Escolha uma dessas atividades:</p>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Celebre e ganhe Seguidores</strong></summary>
         
+        <p>Vai beber e espalhar suas façanhas! Para cada objeto <strong>Valioso</strong> gasto de tal maneira, você ganha uma ressaca
+        e um amigo aleatório na cidade. Esse amigo está disposto a fazer favores, mas vai continuar na cidade.</p>
+
+        <p>Se gastar o equivalente de um <strong>Tesouro</strong>, um de seus amigos se torna um <strong>Seguidor</strong> e vai com
+        você em suas aventuras, agindo como uma personagem sem classe (até subir de nível). Seguidores ocupam espaços na Psique.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Treine</strong></summary>
+        
+        <p>Novas experiências deixam você reavaliar o que você sabia e reconsiderar novas coisas. Role 1d6 e se rolar
+        6, você pode trocar uma Perícia à sua escolha.</p>
+
+        <p>Para cada objeto <strong>Valioso</strong> gasto nos seus preparos, você pode rerolar um dos seus atributos, guardando
+        o maior valor.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Crie um Objeto</strong></summary>
+        
+        <p>Você precisa de materiais (como o couro do monstro que você matou) para criar algum objeto e gastar
+        tanto quanto queira nas ferramentas. Os objetos criados podem ser qualquer coisa que possa ser feita
+        primariamente com os materiais dados.</p>
+
+        <p>Se você usar ferramentas mundanas, o objeto vai ser mundano. Se gastar o equivalente de um objeto
+        <strong>Valioso</strong> com as ferramentas, o objeto vai ser especial (ainda que mundano), e se gastar
+        o equivalente de um <strong>Tesouro</strong>, o objeto vai ser mágico.</p>
+
+        <p>Discuta o que você quer com o GM.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Construa uma Casa</strong></summary>
+        
+        <p>Gastar um objeto <strong>Valioso</strong> dessa maneira vai gerar 1 móvel mundano.</p>
+
+        <p>Se gastar o equivalente de um <strong>Tesouro</strong>, você também se torna o dono de uma estrutura
+        da forma que você quiser com uma área de 100 m².</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Estude um Grimório</strong></summary>
+        
+        <p>Você precisa de um <strong>Grimório</strong> e um quantidade de materiais arcanos equivalente a
+        um <strong>Tesouro</strong> para estudar magia.</p>
+
+        <p>Quando estudar, escolha qual livro está estudando, ganhe o conhecido contido nele e role para escolher
+        uma das magias dele. Se já souber a magia, role de novo.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Adestre uma Besta Capturada</strong></summary>
+        
+        <p>Você precisa ter capturado uma Besta Selvagem. Gaste um objeto <strong>Valioso</strong> para cada
+        um dos Dados de Vida dela para fazê-la um de seus seguidores.</p>
+
+        <p>Cada objeto <strong>Valioso</strong> a mais ensina a besta um comando de uma palavra. Caso não houver, ela
+        só age para comer ou para se defender.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Faça um Pacto</strong></summary>
+        
+        <p>Você precisa ter um livro apropriado ou uma maneira de contatar a Entidade em questão. Para cada 
+        objeto <strong>Valioso</strong> gasto nesse ritual, receba uma <strong>Obrigação</strong> e
+        uma <strong>Recompensa</strong> oferecida pela criatura.</p>
+
+        <p>Você se torna servo da Entidade até a <strong>Obrigação</strong> ser concluída e perde sua alma
+        caso a falhe.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Construa um Constructo</strong></summary>
+        
+        <p>Você deve ter um manual de instruções ou ajuda qualificada. Cada Constructo tem instruções específicas
+        na sua descrição, mas sempre precisa de magia e muitos <strong>Tesouros</strong>.</p>
+
+        <p>Em um sucesso, você ganha um Seguidor muito poderoso. É esperado que a Equipe se junte para criar um Constructo.</p>
+        </details>
+
+        <details class="pb-3">
+        <summary class="header"><strong>Ligue um Elemental a Você</strong></summary>
+        
+        <p>Você precisa ter a alma de um Espírito Elemental e gastar o equivalente de um <strong>Tesouro</strong> em materiais
+        arcanos. Role de acordo com a descrição do Elemental. Você também ganha um Dado de Magia.</p>
+        </details>
+
+        <p>E, independente do resto, se tiver tomado um risco mortal por uma de suas Crenças, você pode
+        remover um de seus Traumas, ganhar uma nova Perícia relacionada a sua ação arriscada ou ganhar um novo Seguidor.</p>
+
         <h2>Seguidores</h2>
         <p>Você ganha <strong>Seguidores</strong> ao Festejar, e um Seguidor ocupa um espaço de Psique.</p>
         <p>Role 1d6 para cada um dos atributos deles. Seguidores podem carregar 3 objetos e tem 2 PV.
@@ -234,15 +327,8 @@ export function Rules() {
             <li class="pb-2"><strong>Envenenado:</strong> Desvantagem em todos os seus testes. Venenos específicos podem ter efeitos específicos.</li>         
             <li class="pb-2"><strong>Exausto:</strong> Você pode agir <strong>ou</strong> se mover na sua Rodada.</li>
             <li class="pb-2"><strong>Invisível:</strong> Atacar e desviar é fácil. Ninguém te vê.</li>
-            <li class="pb-2"><strong>Paralisado:</strong> Você não pode se mover. Role 1d6:
-            <ol>
-                <li>Você não consegue Respirar</li>
-                <li>Você não consegue mover uma perna. Se tomar dano, fique Caído.</li>
-                <li>Você não consegue mover uma perna. Se tomar dano, fique Caído.</li>
-                <li>Você não consegue mover o braço não principal. Desconsidere itens nele.</li>
-                <li>Você não consegue mover o braço principal. Desconsidere itens nele.</li>
-                <li>Um item que você veste ou está segurando está preso. Desconsidere o efeito dele.</li>
-            </ol></li>
+            <li class="pb-2"><strong>Paralisado:</strong> Você não pode se mover. Role 1d6, se rolar de 1 a 3, não pode atacar,
+             caso contrário, não pode esquivar.</li>
             <li class="pb-2"><strong>(Não) Respirando:</strong> Você pode segurar seu fôlego por tantas Rodadas quanto sua Força.
             Se tomar dano, faço um teste de Força. Se falhar, você começa a Morrer.</li>       
             <li class="pb-2"><strong>Pasmo:</strong> Você perde sua Rodada. Todos os testes são difíceis.</li>
