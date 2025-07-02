@@ -161,12 +161,43 @@ export function Rules() {
         <p>Você não pode nadar, pular ou fazer ações furtivas se estiver com armadura completa.</p>
         
         <h2>Tesouros</h2>
-        <p>Cada objeto que você encontra tem um certo valor dado pelo GM:</p>
+        <p>De maneira geral, objetos e valores podem ser divididos em 6 grandes faixas:</p>
         <ul>
-            <li>Mundano (uma bolsa de moedas de cobre)</li>
-            <li>Útil (uma bolsa de moedas de prata)</li>
-            <li>Valioso (uma bolsa de moedas de ouro)</li>
-            <li>Tesouro (uma bolsa de moedas de pedras preciosas)</li>
+            <li>
+                <p><strong>Básico:</strong> Gastos pequenos do dia a dia, e valores que seriam confiados até
+                mesmo a uma criança.</p>
+                
+                <p>Ex.: uma refeição, uma noite na pousada, fofoca, uma tocha, etc.</p>
+            </li>
+            <li>
+                <p><strong>Mundano:</strong> Objetos do dia a dia produzidos em massa ou de baixo valor agregado.</p>
+                
+                <p>Ex.: uma faca, uma pá, 20 metros de corda, uma tarefa pequena, etc.</p>
+            </li>
+            <li>
+                <p><strong>Artesanal:</strong> Objetos criados por artesãos e pequenos luxos.</p>
+                
+                <p>Ex.: uma espada, um elmo, uma couraça, um cavalo, um item de luxo, uma propina, etc.</p>
+            </li>
+            <li>
+                <p><strong>Valioso:</strong> Objetos de valor ou raridade considerável, trabalho qualificado ou items
+                mágicos menores.</p>
+                
+                <p>Ex.: uma poção, um pergaminho, veneno, um empregado, uma licença real, um objeto de mithral, etc.</p>
+            </li>
+            <li>
+                <p><strong>Tesouro:</strong> Objetos de muito valor, geralmente com propriedades arcanas ou
+                extra-dimensionais.</p>
+                
+                <p>Ex.: uma arma encantada, a escritura de uma casa, uma profecia, subir de nível.</p>
+            </li>
+            <li>
+                <p><strong>Nacional:</strong> Objetos de valor cultural inmensuráveis, ou quantias que não tem preço.
+                Geralmente podem ser usados pra fins políticos ou para trocar favores, mas não podem ser vendidos ou
+                trocado diretamente.</p>
+                
+                <p>Ex.: a Coroa do Reino, a Espada da Rainha Passada e Futura, o Cetro da Rainha das Fadas.</p>
+            </li>
         </ul>
 
         <p>Uma bolsa de moedas ocupa um espaço de Inventório.</p>
@@ -174,7 +205,7 @@ export function Rules() {
         <p>Quando estiver em uma cidade, você pode trocar items por outros na mesma categoria (à discrição do mestre,
         só dizer o que você está procurando).</p>
 
-        <p>Alternativamente, 4 objetos de uma dada categoria tem um valor aproximado de um objeto na próxima categoria.</p>
+        <p>Quatro objetos de uma dada categoria tem um valor aproximado de um objeto na próxima categoria.</p>
         
         <h2>Progressão</h2>
         <p>Você sobe de nível quando gasta o equivalente de 
