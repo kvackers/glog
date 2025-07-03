@@ -2,9 +2,20 @@ import "https://esm.sh/preact@10.26.9/debug";
 import { h } from 'https://esm.sh/preact@10.26.9';
 import { useState } from 'https://esm.sh/preact@10.26.9/hooks';
 import htm from 'https://esm.sh/htm@3.1.1';
-import { SPELLS } from "./utils.js";
+import { SPELL_SCHOOLS, SPELLS } from "./utils.js";
 
 const html = htm.bind(h);
+
+function compileText(element) {
+    if (typeof element === "string") {
+        return html`<p>${element}</p>`;
+    } else if (typeof element === "object" && element.ol) {
+        return html`
+            <ol>
+                ${element.ol.map(li => html`<li>${li}</li>`)}
+            </ol>`;
+    }
+}
 
 function Spell({ spell }) {
     const { name, warning, description, range, duration } = spell;
@@ -12,7 +23,7 @@ function Spell({ spell }) {
     const rangeElem = range ? html`<p><strong>Alcance:</strong> ${range}</p>` : "";
     const durationElem = duration ? html`<p><strong>Duração:</strong> ${duration}</p>` : "";
     const warningElem = warning ? html`<p><em>${warning}</em></p>` : "";
-    const descriptionElems = description ? description.map(p => html`<p>${p}</p>`) : "";
+    const descriptionElems = description ? description.map(compileText) : '';
 
     return html`
         <details class="pb-3">
@@ -26,20 +37,44 @@ function Spell({ spell }) {
         </details>`;
 }
 
+function SpellsBySchools() {
+    const [school, setSchool] = useState("Animorfose");
+
+    return html`
+    <div class="d-flex pt-3 pb-3 btn-toolbar justify-content-around">
+        ${SPELL_SCHOOLS.map(e => {
+        return html`
+            <button class="btn btn-outline-primary header mb-2"
+                    onclick=${() => setSchool(e.school)}>
+                ${e.school}
+            </button>`;
+    })}
+    </div>
+    
+    <p>${SPELL_SCHOOLS.filter(e => e.school === school)[0].description}</p>
+    <p>Na descrição de magias, [dados] se refere ao número de DMs investidos e [soma] à soma desses dados
+        quando rolados.</p>
+    ${SPELLS.filter(sp => sp.school === school).map(sp => html`<${Spell} spell=${sp} />`)}`;
+}
+
 export function Spells() {
-    const [spellUI, setSpellUI] = useState({ alpha: true })
+    const [spellUI, setSpellUI] = useState({ alpha: false })
 
     const spellHeader = spellUI.alpha ? "Magias em ordem alfabética " : "Magias por Escola ";
     const toggleSpellType = () => setSpellUI({ ...spellUI, alpha: !spellUI.alpha });
+
+    const spellElems = spellUI.alpha ? html`
+        <p>Na descrição de magias, [dados] se refere ao número de DMs investidos e [soma] à soma desses dados
+        quando rolados.</p>
+        ${SPELLS.map(sp => html`<${Spell} spell=${sp} />`)}` :
+        html`<${SpellsBySchools} />`;
 
     return html`
         <div class="d-flex justify-content-between">
             <h2>${spellHeader}</h2>
             <button type="button" class="btn btn-outline-primary" onclick=${toggleSpellType}>🔄</button>
         </div>
-        <p>Na descrição de magias, [dados] se refere ao número de DMs investidos e [soma] à soma desses dados
-        quando rolados.</p>
-        ${SPELLS.map(sp => html`<${Spell} spell=${sp} />`)}
+        ${spellElems}
 
         <h2>Catástrofe</h2>
         <p>Você mexeu com forças além das suas habilidades e eventualmente seus experimentos iam falhar.</p>
