@@ -287,7 +287,7 @@ export function Classes() {
             <h4>Magia Divina</h4>
             <p>Escolha 2 Magias das escolas de Fisiúrgia, Apotropaísmo ou Truques. Você sabe essas Magias (e as guarda na sua Psique). Você ganha 3 espaços de Psique a mais.</p>
 
-            <p>Hereges (Arcanistas, Profundos e Infernais) podem escolher esse template.</p>
+            <p>Hereges (Arcanistas, Profundos e Infernais) não podem escolher esse template.</p>
 
             <h4>Pequenos Ritos</h4>
             <p>Você pode fazer os seguintes ritos:</p>
@@ -533,6 +533,8 @@ export function Classes() {
                 <li>Tiro Perfeito I</li>
                 <li>Tiro Perfeito II</li>
             </ol>
+            
+            <p>Esses Templates contam como Templates Raciais.</p>
 
             <h4>Magia Élfica</h4>
             <p>Suas magias são guardadas na sua Psique e você gasta DMs para lançá-las. Você as recupera depois de um Descanso Longo em que você não está feio, sujo, molhado, humilhado, etc.</p>
@@ -565,5 +567,51 @@ export function Classes() {
 
             <h4>Tiro Perfeito II</h4>
             <p>Você pode atacar com seu arco uma vez a mais em uma rodada, desde que não esteja feio, sujo, molhado, humilhado, etc.</p>
+        </section>
+        
+        <section class="${displayClass("faunaB")} pb-3">
+            <h2>Profundos</h2>
+
+            <h4>Equipamento Inicial:</h4>
+            <ul>
+                <li>1 Armadura de Couro Edgy</li>
+                <li>1 Tridente</li>
+                <li>1 Capa</li>
+            </ul>
+
+            <h4>Perícias Iniciais</h4>
+            <p>Escolha uma das opções abaixo:</p>
+            <ul>
+                <li>Filho do Demônio</li>
+                <li>Órfão Engenhoso</li>
+                <li>Andarilho Cansado</li>
+                <li>Conquistador Sombrio</li>
+            </ul>
+
+            <h4>Templates</h4>
+            <p>Para cada Template de Profundo, você aprende uma Magia nova, e a cada dois Templates você ganha 1 DM a mais.</p>
+
+            <ol type="A">
+                <li>Maleficência, Consumir Essência</li>
+                <li>Forjado nas Profundezas</li>
+                <li>Magia Extra</li>
+                <li>Metamagia</li>
+            </ol>
+
+            <p>Esses Templates contam como Templates Raciais.</p>
+
+            <h4>Maleficência</h4>
+            <p>Você nasce com uma mutação que te marca como um Profundo - filho de um Infernal e humano. Seus traços, se vistos, vão chamar atenção para você.</p>
+
+            <p>Você nasce sabendo a Magia Maleficência e com 1 DM.</p>
+
+            <h4>Consumir Essência</h4>
+            <p>Quando você matar uma criatura inteligente, você pode capturar a essência dela e a guardar em seu Inventório. A qualquer momento, você pode consumir uma Essência que você tenha para ganhar 1 DM temporário.</p>
+
+            <h4>Forjado nas Profundezas</h4>
+            <p>Armas corpo a corpo, nas suas mãos, aumentam seu dado de dano em um passo e inflingem o mesmo tipo de dano que sua Maleficência, caso você queira.</p>
+
+            <h4>Metamagia</h4>
+            <p>A cada Descanso Longo, você pode trocar 1 das Magias na Psique por uma que não está na sua Psique.</p>
         </section>`;
 }
