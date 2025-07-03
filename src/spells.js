@@ -14,6 +14,11 @@ function compileText(element) {
             <ol>
                 ${element.ol.map(li => html`<li>${li}</li>`)}
             </ol>`;
+    } else if (typeof element === "object" && element.ul) {
+        return html`
+            <ul>
+                ${element.ul.map(li => html`<li>${li}</li>`)}
+            </ul>`;
     }
 }
 

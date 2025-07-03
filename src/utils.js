@@ -24,12 +24,30 @@ export const SPELL_SCHOOLS = [
     { school: "Animorfose", description: 'Magias relacionadas a se tornar como uma espécie animal' },
     { school: "Apotropaísmo", description: 'Magias que estudam selos e proteção contra maldições e o mal' },
     { school: "Elementalismo", description: 'Magias que lidam com os espíritos da terra' },
-    { school: "Fisiúrgia", description: 'Remédios e curas tradicionais' },
+    { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
     { school: "Truques", description: 'A arte de encantar objetos do dia-a-dia de modo utilitário' },
 ]
 
 export const SPELLS = [
+    {
+        "name": "Aço Leal",
+        "school": "Apotropaísmo",
+        "description": [
+            "Você encanta uma arma para flutuar no ar ao seu lado e te proteger. Como uma ação livre, sempre que for atacado a arma contraataca. Ela ataca como se você a empunhasse. A magia acaba quando sua duração expirar ou depois de [dados] golpes com sucesso.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, não tem número máximo de golpes."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Água ao Vinho",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você torna [dados] rações de água em um alcóolico de baixa qualidade.",
+            "Alternativamente, dá [soma] pontos de dano de veneno a uma criatura tocada, teste para tomar metade, e a deixa bêbada (envenenada) por [soma] horas."
+        ],
+        "range": "Toque"
+    },
     {
         "name": "Amuleto da Mão Aberta",
         "school": "Apotropaísmo",
@@ -78,11 +96,31 @@ export const SPELLS = [
         "range": "Voz"
     },
     {
-        "name": "Aço Leal",
-        "school": "Apotropaísmo",
+        "name": "Aura de Intoxicação",
+        "school": "Fisiúrgia",
         "description": [
-            "Você encanta uma arma para flutuar no ar ao seu lado e te proteger. Como uma ação livre, sempre que for atacado a arma contraataca. Ela ataca como se você a empunhasse. A magia acaba quando sua duração expirar ou depois de [dados] golpes com sucesso.",
-            "Se investir 4 dados ou mais e escrever seu Sigilo, não tem número máximo de golpes."
+            "Todos na aura ficam bêbados (envenenados). Eles podem fazer um teste a cada rodada em batalha.",
+            "Você pode escolher [dados] x 2 criaturas para isentar do efeito da aura."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Aura de Renovação",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você se senta e canta uma música de vida. Se você se mexer ou parar de cantar, a magia acaba. Personagens dentro do seu alcance vão ter a duração de todas as magias que afetam eles se extender até a duração da música."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] horas"
+    },
+    {
+        "name": "Bainha de Sangue",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você toma [dados] dano e extrai seu sangue para forjar uma arma corpo-a-corpo de uma mão. Esse dano não pode te deixar com menos de 1 PV.",
+            "A arma dá 1d8 + Número de Cicatrizes de dano. Você (e só você) tem vantagens nos seus testes de ataque com essa arma.",
+            "Se investir 4 dados ou mais, a arma se torna permanente."
         ],
         "duration": "[dados] x 10 minutos"
     },
@@ -162,6 +200,23 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Círculo de Areia",
+        "school": "Apotropaísmo",
+        "description": [
+            "Você regula a temperatura em uma área. Você toma 10 minutos para traçar um círculo em areia e o completar com Sigilo. O círculo pode ter até [dados] x 6 metros de diâmetro. Uma vez completo, a temperatura dentro do círculo muda por [soma] x 5 ºC para cima ou para baixo.",
+            "Cada 30 graus abaixo de zero causa 1d6 de dano frio por hora, enquanto cada 30 graus acima de 40 ºC causa 1d6 de dano de fogo."
+        ],
+        "duration": "Sigilo"
+    },
+    {
+        "name": "Cobre à Veneno",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você transforma até [soma] porta-moedas de moedas de cobre ou objeto de cobre equivalente em um veneno verde, cristalino e solúvel em água. Uma dose desse veneno ocupa um espaço no Inventório, dissolve em um copo d'água e faz 1d6 de dano para quem beber por dose, teste para dar metade."
+        ],
+        "range": "Toque"
+    },
+    {
         "name": "Contorção",
         "school": "Animorfose",
         "description": [
@@ -180,13 +235,30 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
-        "name": "Círculo de Areia",
-        "school": "Apotropaísmo",
+        "name": "Corda Sangrenta",
+        "school": "Fisiúrgia",
         "description": [
-            "Você regula a temperatura em uma área. Você toma 10 minutos para traçar um círculo em areia e o completar com Sigilo. O círculo pode ter até [dados] x 6 metros de diâmetro. Uma vez completo, a temperatura dentro do círculo muda por [soma] x 5 ºC para cima ou para baixo.",
-            "Cada 30 graus abaixo de zero causa 1d6 de dano frio por hora, enquanto cada 30 graus acima de 40 ºC causa 1d6 de dano de fogo."
+            "Você drena seu sangue em uma corda e cria 10 metros por ponto de dano auto inflingido. A corda conta como mágica.",
+            "Se lançar essa magia com 3 dados ou mais, você pode fazer a corda aperecer me qualquer ponto que você possa ver, contanto que consiga alcançar o outro lado."
         ],
-        "duration": "Sigilo"
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Cura Milagrosa",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você toca uma criatura próxima para milagrosamente curar suas feridas. Escolha [dados] dos efeitos abaixo (a mesma opção pode ser escolhida várias vezes):",
+            {
+                "ul": [
+                    "O alvo pode tentar se estabilizar com vantagem",
+                    "Se o alvo não estiver Morrendo, ele ganha 3 PV",
+                    "O alvo pode tentar um Teste para se recuperar de um veneno",
+                    "O alvo pode tentar um Teste para se recuperar de uma doença"
+                ]
+            }
+        ],
+        "range": "Toque"
     },
     {
         "name": "Dar Aspecto de [Animal]",
@@ -232,6 +304,26 @@ export const SPELLS = [
         "duration": "1 dia"
     },
     {
+        "name": "Drenagem Vascular",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você cria um conduíte vermelho brilhante da sua palma e usa para fazer um ataque a distância. Se atingir um alvo vivo, dá 1d6 de dano ao alvo e você recupera [dados] PVs. Você pode tentar um ataque a cada rodada."
+        ],
+        "range": "Um chicote",
+        "duration": "[dados] rodadas"
+    },
+    {
+        "name": "Embelezar",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você faz um objeto ou criatura mais bonito. Poeira cai, cravos desaparecem, dentes esbranqueiam e varniz parece novo.",
+            "Pela duração, o alvo tem vantagem em testes de reação e tem mais facilidade em barganhar.",
+            "Se investir 4 dados ou mais, a duração se torna permanente."
+        ],
+        "range": "Toque",
+        "duration": "[soma] horas"
+    },
+    {
         "name": "Enxame de Moscas",
         "school": "Animorfose",
         "description": [
@@ -252,6 +344,17 @@ export const SPELLS = [
         "duration": "Sigilo"
     },
     {
+        "name": "Falar com Sangue",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você pode falar com o sangue de todos os seres vivos. Sangue é o trono da Alma Animal, e ele sabe de sexo, violência, instintos e desejos.",
+            "Se [soma] for menor que 5, você fala com seu sangue - talvez ele saiba coisas que você não percebeu.",
+            "Se [soma] for menor que 10, você fala com o sangue de outros seres vivos ou sangue derramado até 24 horas atrás.",
+            "Caso contrário, você pode dar um novo desejo ao dono do sangue com quem falou."
+        ],
+        "duration": "[soma] minutos"
+    },
+    {
         "name": "Fiadeira Sedosa",
         "school": "Animorfose",
         "description": [
@@ -262,6 +365,34 @@ export const SPELLS = [
             "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
         ],
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Hibernação",
+        "school": "Fisiúrgia",
+        "description": [
+            "O alvo cai em um sono mágico e não pode ser acordado por nada menos vigoroso que um tapa (uma ação padrão). Alvos pegos de surpresa não fazem um teste. Enquanto dorme, o alvo parece pálido, com lábios azulados; não precisa comer ou beber, e se estava Morrendo, não está mais pela duração da magia.",
+            "Se investir 4 ou mais dados e inscrever seu Sigilo, o efeito se torna permanente e você decide a única condição que vai causar o alvo a acordar (ex.: beijo do amor verdadeiro)."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Lareira Interna",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você consome um naco de carvão e seu interior fica comfortavelmente quentinho. Você se torna imune a condições ambientais fria e toma metade de dano de ataques congelantes."
+        ],
+        "duration": "[soma] horas"
+    },
+    {
+        "name": "Leite e Mel",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você prepara uma mistura de leite, mel (e algumas outras coisas) antes de lançar essa magia, que, se bebida quente, faz quem toma dormir por [soma] horas.",
+            "Todas as tentativas de acordar o alvo menos vigorosas que algo que daria dano falham, mas o alvo vai acordar com [dados] PV bônus pro dia e vão ter se recuperado de [dados] doenças e/ou venenos."
+        ],
+        "range": "Toque",
+        "duration": "[soma] horas"
     },
     {
         "name": "Luz de Aviso",
@@ -291,6 +422,16 @@ export const SPELLS = [
             "Mecânicamente, ganhe [dados] pontos de armadura. Se investir 4 dados ou mais, o efeito se torna permanente."
         ],
         "duration": "10 minutos"
+    },
+    {
+        "name": "Morte à Vida",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você traz um cadáver de volta à vida. O corpo não tem nenhuma parte ou órgão que não tinha antes de voltar a vida, mas está milagrosamente vivo por [dados] dias caso não tenha órgãos vitais.",
+            "O finado volta com 1 PV, nível 0 e guardando leito até que se recupere pela mesma quantidade de tempo que passou morto. Depois, ele vai recuperar 1 template de classe por semana, até [dados] templates. Não pode subir de nível até se recuperar.",
+            "Depois de lançar a magia você está em choque e precisa rolar 1d4. Se rolar mais que [dados], você entra em coma pelo resto da sessão. Se rolar 4, você ativa uma Catástrofe."
+        ],
+        "range": "Toque"
     },
     {
         "name": "Nove Vidas",
@@ -379,6 +520,24 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Reanimar",
+        "school": "Fisiúrgia",
+        "description": [
+            "Bata suas palmas no peito de uma criatura que morreu nos últimos [dados] turnos. Role 1d6. O alvo:",
+            {
+                "ol": [
+                    "Continua morto",
+                    "Continua morto",
+                    "Ganha [dados] PV",
+                    "Ganha [dados] x 2 PV",
+                    "Ganha [soma] PV",
+                    "Ganha [soma] + [dados] PV"
+                ]
+            }
+        ],
+        "range": "Toque"
+    },
+    {
         "name": "Reflexos Felinos",
         "school": "Animorfose",
         "description": [
@@ -386,6 +545,16 @@ export const SPELLS = [
             "Com 4 dados, a magia te dá uma ação extra na sua Rodada."
         ],
         "duration": "[soma] rodadas"
+    },
+    {
+        "name": "Restorar",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você temporariamente remove ou cura [dados] mutações ou transformações mágicas afetando uma criatura. Alvos que não consintam podem fazer um teste para negar o efeito.",
+            "Se investir 4 ou mais dados, a duração é permanente."
+        ],
+        "range": "Toque",
+        "duration": "[soma] horas"
     },
     {
         "name": "Retribuição Kármica",
@@ -421,6 +590,16 @@ export const SPELLS = [
             "Você atira um alvo vivo, o ateando em fogo. Você tem um bônus de [soma] ao seu teste de ataque enquanto o faz, e, se o alvo quiser, ele toma [soma] dano de fogo extra.",
             "Se a vítima sacrificial morrer, ela se imola em uma bola de fogo massiva que dá [soma] x [DV] de dano de fogo para tudo em seu alcance. Isso ignora resistências e imunidades de criaturas mortas-vivas ou \"da noite\"."
         ]
+    },
+    {
+        "name": "Salvação",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você toca um alvo e, pela duração da magia, você rola testes de resistência no lugar do alvo, adicionando um bônus de +[dados] aos testes. Se falhar, o alvo não pode ser salvo e é amaldiçoado pelo resto do dia.",
+            "Se você investir 4 dados ou mais e inscrever seu Sigilo no alvo, os efeitos se tornam permanentes."
+        ],
+        "range": "Toque",
+        "duration": "10 minutos"
     },
     {
         "name": "Selo de Retribuição",
@@ -487,6 +666,23 @@ export const SPELLS = [
             "Se investir 4 ou mais dados, pode ver tudo que toca na teia, mesmo se estiver em outro lugar."
         ],
         "range": "20 metros"
+    },
+    {
+        "name": "Último Juramento",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você abre os conduítes da vida de seus aliados enquanto você faz um juramento de dever. Todos os aliados em alcance, mas não você mesmo, são curados [soma] PV. Você toma [dados] dano para cada aliado curado dessa maneira."
+        ],
+        "range": "10 metros"
+    },
+    {
+        "name": "Vigor",
+        "school": "Fisiúrgia",
+        "description": [
+            "Você imbuí uma criatura ou um objeto com vida. Ela ganha [dados] x 2 PVs temporários."
+        ],
+        "range": "Toque",
+        "duration": "1 dia"
     },
     {
         "name": "Zoofobia",
