@@ -150,6 +150,14 @@ export const SPELLS = [
         "range": "[dados] x 10 metros"
     },
     {
+        "name": "Barreira de Vento",
+        "school": "Elementalismo",
+        "description": [
+            "Você invoca ventos para defletir pequenos mísseis como flechas e lanças. A magia se move com você e pode abrigar [dados] pessoas. Mísseis que saem de dentro da barreira também são impedidos."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Bode Expiatório",
         "school": "Apotropaísmo",
         "description": [
@@ -166,6 +174,31 @@ export const SPELLS = [
             "Se investir 4 dados ou mais e escrever seu Sigilo, suas mãos estão permanentemente transformadas. Você pode então usar as habilidades supracitadas sem gastar DMs, tendo dano de 1d6."
         ],
         "range": "10 metros"
+    },
+    {
+        "name": "Capa Elemental",
+        "school": "Elementalismo",
+        "description": [
+            "Na presença de uma quantidade significativa de um elemento, você convida seu espírito para uma carona. Para alguns, parece como uma capa feita do elemento, e para outros, parece como uma criatura estranha andando nas costas. Para a duração da magia, você é imune ao elemento e escolhe [dados] opções:",
+            {
+                "ol": [
+                    "Você está invisível nesse elemento",
+                    "Criaturas adjacentes a você tomam [dados] dano no seu turno",
+                    "Você tem [soma] PV temporário",
+                    "Você deixa uma trilha do elemento, que ou causa dano ou é difícil de se cruzar"
+                ]
+            },
+            "Se a magia acabar naturalmente, o espírito fica onde você o deixou e pode modificar a área nos próximos dias."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Carruagem do Vento",
+        "school": "Elementalismo",
+        "description": [
+            "Um tumulto de elementais do vento, prismáticos e cacófonos, levantam você e seus companheiros e os movimentam na direção que você quiser. Nenhuma ação sútil ou comunicação pode acontecer enquanto estiverem na carruagem."
+        ],
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Castigar os Iníquos",
@@ -289,6 +322,14 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Cortar o Vento",
+        "school": "Elementalismo",
+        "description": [
+            "Você toca uma arma e grita como os ventos uivantes. Pela duração da magia, você faz um ataque a distância com a arma encantada até 20 metros de distância, e pode ter como alvo [dados] criaturas com cada ataque contanto que as criaturas estejam adjacentes entre si."
+        ],
+        "duration": "10 minutos"
+    },
+    {
         "name": "Cura Milagrosa",
         "school": "Fisiúrgia",
         "description": [
@@ -385,6 +426,23 @@ export const SPELLS = [
         "duration": "[dados] rodadas"
     },
     {
+        "name": "Elementomorfose",
+        "school": "Elementalismo",
+        "description": [
+            "Dependendo do número de dados que investir, você converte:",
+            {
+                "ul": [
+                    "Um punho ou parte corporal menor",
+                    "Um membro",
+                    "Metade do seu corpo",
+                    "Seu corpo inteiro e seu equipamento"
+                ]
+            },
+            "no elemento em questão. Você também aumenta o dado de dano de ataques desarmados em um passo com a parte do corpo modificada, e dá dano do tipo relevante."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Embelezar",
         "school": "Fisiúrgia",
         "description": [
@@ -426,6 +484,14 @@ export const SPELLS = [
         "duration": "Sigilo"
     },
     {
+        "name": "Escada de Yakuv",
+        "school": "Elementalismo",
+        "description": [
+            "Você cria um arco de eletricidade entre dois pontos que estão até [dados] x 40 metros de distância. O arco é uma barreira semi-sólida. Escalar a escada não é perigosa, mas correr através dela dá [soma] dano elétrico. O arco apoia o peso de uma pessoa mas não de um veículo ou montaria."
+        ],
+        "duration": "10 minutos"
+    },
+    {
         "name": "Espelho de Heka",
         "school": "Apotropaísmo",
         "description": [
@@ -443,6 +509,23 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[soma] rodadas"
+    },
+    {
+        "name": "Explosão Elemental",
+        "school": "Elementalismo",
+        "description": [
+            "Você detona uma explosão de elemento que causa [soma] dano do elemento apropriado a todos em um raio de 10 metros"
+        ],
+        "range": "30 metros"
+    },
+    {
+        "name": "Fala da Tormenta",
+        "school": "Elementalismo",
+        "description": [
+            "Você comenta o tempo, mas somente através de um comando de [soma] palavras. Qualquer modificação do tempo vai causar retribuição no futuro.",
+            "Se investir 4 dados ou mais, o efeito se torna permanente mas uma Catástrofe acontece."
+        ],
+        "duration": "[dados] horas"
     },
     {
         "name": "Falar com Sangue",
@@ -465,6 +548,16 @@ export const SPELLS = [
             "Encasule: Tome 10 minutos para encasular um objeto parado em um casulo de seda.",
             "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
         ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Fissura Magnética",
+        "school": "Elementalismo",
+        "description": [
+            "Você cria uma linha de força magnética invisível entre dois pontos no alcance. A linha pode passar por objetos sólidos. Tudo que passar pela linha enquanto usar armadura metálica toma [soma] dano e precisa passar em um teste de resistência ou fica Caído.",
+            "Criaturas feitas de aço, ou com implantes de metal ou piercings ou componentes delicados, tomam [soma] + [dados] dano e ficam Caídos."
+        ],
+        "range": "20 metros",
         "duration": "[dados] x 10 minutos"
     },
     {
@@ -509,6 +602,14 @@ export const SPELLS = [
             "Quando um ataque for te atingir, role 1d6 para ver se o ataque atinge você ou uma imagem. Se rolar menor ou igual que o número de imagens, o ataque atinge uma imagem invés de você. Se o ataque causaria dano, a imagem some. Efeitos de área (como o sopro de um dragão) dissipam todas as imagens."
         ],
         "duration": "10 minutos"
+    },
+    {
+        "name": "Invocar Água",
+        "school": "Elementalismo",
+        "description": [
+            "Você grita o brado do azul profundo enquanto toca um contêiner. Toda a água dentro do alcance é imediatamente puxado para dentro do contêiner (potencialmente o transbordando)."
+        ],
+        "range": "[dados] x 10 metros"
     },
     {
         "name": "Lareira Interna",
@@ -568,6 +669,25 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Mensagem do Vento",
+        "school": "Elementalismo",
+        "description": [
+            "O vento carrega suas mensagens para seus companheiros em alcance, como se os seus companheiros estivessem do seu lado."
+        ],
+        "range": "40 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Metal para Chama",
+        "school": "Elementalismo",
+        "description": [
+            "Você muda um objeto de metal para fogo. O objeto mantém sua massa e forma mas causa [dados]d4 de dano para tudo que o toca quando transforma e [dados] dano a cada turno subsequente de contato. Se usado como arma dá [dados]d4 de dano de fogo.",
+            "Se investir 4 dados ou mais, e escrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Morte à Vida",
         "school": "Fisiúrgia",
         "description": [
@@ -584,6 +704,13 @@ export const SPELLS = [
             "Você tatua seu Sigilo sobre seu coração. Nas próximas [dado] vezes que você tomar dano que te levaria a 0 PV ou menos, invés de Morrer ganhe 1 ponto de Destruição."
         ],
         "duration": "Sigilo"
+    },
+    {
+        "name": "Onda de Trovão",
+        "school": "Elementalismo",
+        "description": [
+            "Você chama a fúria da tempestade em uma explosão de luz e trovão. Tudo em um raio de 10 metros toma [soma] dano de impacto."
+        ]
     },
     {
         "name": "Órbita",
@@ -629,6 +756,39 @@ export const SPELLS = [
             "Se investir 4 dados ou mais, a duração vira até você fazer um Descanso Longo."
         ],
         "range": "10 metros",
+        "duration": "[dados] rodadas"
+    },
+    {
+        "name": "Parede Elemental",
+        "school": "Elementalismo",
+        "description": [
+            "Você pode rearranjar um cubo de 4 metros do elemento em questão, moldando o material conforme quiser. Se estiver horizontal, a parede deve estar ancorada em no mínimo dois lados.",
+            "Atravesar a parede (se possível) fora de um buraco ou abertura dá [soma] dano do elemento apropriado."
+        ],
+        "range": "10 metros"
+    },
+    {
+        "name": "Passo do Vento",
+        "school": "Elementalismo",
+        "description": [
+            "Você se move até 20 metros como uma ação livre. Seu movimento é tão rápido que parece instantâneo. Efeitos extras dependem do número de dados investidos:",
+            {
+                "ol": [
+                    "Você ignora placas de pressão (e mecanismos similares), assim como terreno difícil ou perigoso.",
+                    "Você pode subir em paredes ou no teto contanto que pare em um lugar que pode ficar normalmente",
+                    "Você pode se mover sobre superfícies que não apoiam seu peso",
+                    "Você pode se mover por espaços muito apertados sem ser parado"
+                ]
+            },
+            "Você também pode lançar essa magia como reação a qualquer ataque corpo-a-corpo feito contra você, até mesmo fora da sua rodada."
+        ]
+    },
+    {
+        "name": "Pele de Pedra",
+        "school": "Elementalismo",
+        "description": [
+            "Sua pele se torna tão dura quanto pedra. Sua destreza se torna 0, mas você absorbe [soma] + [dados] dano que você receberia. Ataques com martelos ignoram esse efeito."
+        ],
         "duration": "[dados] rodadas"
     },
     {
@@ -808,6 +968,15 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "10 minutos"
+    },
+    {
+        "name": "Salvação do Vento",
+        "school": "Elementalismo",
+        "description": [
+            "A magia pode ser lançada instantaneamente quando um objeto ou criatura cai. Você faz um pedido desesperado para os espíritos do ar pegarem [dados] pessoas ou objetos.",
+            "Tem uma chance de 1 em 6 que o espírito peça um favor em troca depois de freiar a queda."
+        ],
+        "range": "20 metros"
     },
     {
         "name": "Selo de Retribuição",
