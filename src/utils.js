@@ -23,6 +23,7 @@ export const DEFAULT_UI_STATE = {
 export const SPELL_SCHOOLS = [
     { school: "Animorfose", description: 'Magias relacionadas a se tornar como uma espécie animal' },
     { school: "Apotropaísmo", description: 'Magias que estudam selos e proteção contra o mal' },
+    { school: "Arcana Ardilosa", description: 'Maldições antigas e magias da natureza' },
     { school: "Elementalismo", description: 'Magias que lidam com os espíritos da terra' },
     { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
@@ -183,6 +184,16 @@ export const SPELLS = [
             "Se investir 4 dados ou mais e escrever seu Sigilo, suas mãos estão permanentemente transformadas. Você pode então usar as habilidades supracitadas sem gastar DMs, tendo dano de 1d6."
         ],
         "range": "10 metros"
+    },
+    {
+        "name": "Caminhada das Sombras",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você liga duas sombras que você pode ver dentro do seu alcance em um portal. Se alguém pisar em uma, sai da outra. Cada sombra precisa ser maior que a coisa a usando para atravessar.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] rodadas"
     },
     {
         "name": "Capa Elemental",
@@ -357,6 +368,15 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Crescendo da Vida",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você revitaliza um pequeno animal ou planta que está morrendo e uma pequena estrela começa a te orbitar. Pela duração da magia, você pode salvar a vida de alguém ao dar um bônus de [dados] x 2 em um teste de resistência, teste de esquiva ou teste para parar de Morrer. Isso consome a estrela."
+        ],
+        "range": "Toque",
+        "duration": "Até o amanhecer"
+    },
+    {
         "name": "Cura Milagrosa",
         "school": "Fisiúrgia",
         "description": [
@@ -442,6 +462,24 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "1 dia"
+    },
+    {
+        "name": "Disfarce",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você cobre um objeto de ilusões, fazendo ele aparecer como um outro objeto da mesma categoria: uma fruta parece outra, uma mesa parece outro móvel, etc.",
+            "Isso só se aplica às propriedades visuais do objeto. O tamanho máximo do objeto depende do número de dados investido:",
+            {
+                "ol": [
+                    "Tamanho de humano",
+                    "Tamanho de uma carruagem",
+                    "Tamanho de uma taverna",
+                    "Tamanho de um barco ou de uma ponte"
+                ]
+            }
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Drenagem Vascular",
@@ -591,6 +629,15 @@ export const SPELLS = [
         "duration": "[dados] horas"
     },
     {
+        "name": "Falar com Pássaros",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você desenha seu Sigilo na cabeça de uma criatura. Contanto que o Sigilo não seja apagado (por água) o alvo pode falar com pássaros e os pássaros podem o responder. Se tem um humanóide andando por perto, tem uma chance de [soma] x 10% que um pássaro aleatório na área sabe onde ele está e se está fazendo algo estranho. A maioria dos pássaros é neurótico mas facilmente subornado.",
+            "Se a soma for maior que 10, a magia também invoca um bando de pássaros com [soma] PV que podem ser induzidos a ajudar a criatura com o sigilo."
+        ],
+        "duration": "Sigilo"
+    },
+    {
         "name": "Falar com Sangue",
         "school": "Fisiúrgia",
         "description": [
@@ -658,6 +705,29 @@ export const SPELLS = [
         "range": "Visão"
     },
     {
+        "name": "Geas",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você amaldiçoa uma vítima com um Geas, uma maldição que força a seguir um comando inescápavel. O comando pode ser uma tarefa longa ou difícil, mas tem que ser possível. A vítima pode fazer um teste para resistir, mas se falhar, seu Sigilo aparece nela instantaneamente.",
+            "Desse ponto em diante, todo dia que não é gasto para preencher o geas faz a vítima sofrer um dos seguintes malefícios:",
+            {
+                "ul": [
+                    "Perca de um poder ou habilidade",
+                    "Perca de saúde (-1d6 para um atributo)",
+                    "Perca de saúde (doença)",
+                    "Perca de energia (fatiga e exaustão)",
+                    "Perca de meios (dinheiro ou propriedade)",
+                    "um de seus amigos ou parentes próximos sofre um malefício aleatório"
+                ]
+            },
+            "Para cada dia que a vítima trabalha para preencher o geas, um desses malefícios se resolve como se nunca esteve lá.",
+            "Um efeito colateral é que a vítima é empoderada para fazer a tarefa: ela ganha algum pequeno poder para ajudá-la a conquistar a tarefa, à discrição do mestre.",
+            "Se a tarefa se tornar impossível, uma Catástrofe acontece para o lançador e a vítima. Se qualquer um deles morrer, isso não impede o geas, já que é preso à alma.",
+            "Se investir 4 dados ou mais, o efeito se torna permanente."
+        ],
+        "duration": "[dados] semanas"
+    },
+    {
         "name": "Hibernação",
         "school": "Fisiúrgia",
         "description": [
@@ -700,6 +770,15 @@ export const SPELLS = [
         ],
         "range": "10 metros",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Lâmina de Grama",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você pode usar qualquer objeto ou parte do corpo como uma lâmina. Tal objeto conta como uma espada e dá [dados]d6 de dano."
+        ],
+        "range": "Toque",
+        "duration": "1 hora"
     },
     {
         "name": "Lareira Interna",
@@ -919,6 +998,15 @@ export const SPELLS = [
             },
             "Você também pode lançar essa magia como reação a qualquer ataque corpo-a-corpo feito contra você, até mesmo fora da sua rodada."
         ]
+    },
+    {
+        "name": "Pedras Cozidas",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você põe seu Sigilo em [soma] pedras, e depois as cozinha em leite. Cada uma delas então pode ser usada para curar um 1 PV de uma criatura, ou ser atirada como uma pedra mágica de uma funda com um bônus de [dados].",
+            "Alternativamente, cozinhe as pedras por 24 horas para produzir uma bebida que dá vantagem em um teste de resistência contra doença, maldição nas próximas 24 horas ou no próximo teste de Catástrofe."
+        ],
+        "duration": "Sigilo"
     },
     {
         "name": "Pele de Pedra",
@@ -1198,6 +1286,16 @@ export const SPELLS = [
         "range": "Visão"
     },
     {
+        "name": "Toca nos Espinhos",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "A magia cava uma toca debaixo de um espinhal ou outro arbusto, e, apesar de ser minimalista e vazio, é um refúgio quente e seguro. A entrada é somente para os seus olhos, mas você pode guiar até [dados] pessoas.",
+            "A saída dos fundos leva 1d6 quilômetros na direção de sua escolha. Você não sabe exatamente aonde, mas a saída está escondida por vegetação. A toca se demole depois de 1 um dia ou quando você sair dela.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente e qualquer número de pessoas pode usá-la com você."
+        ],
+        "duration": "1 dia"
+    },
+    {
         "name": "Transmitir Fôlego",
         "school": "Translocação",
         "description": [
@@ -1225,6 +1323,17 @@ export const SPELLS = [
             "Você abre os conduítes da vida de seus aliados enquanto você faz um juramento de dever. Todos os aliados em alcance, mas não você mesmo, são curados [soma] PV. Você toma [dados] dano para cada aliado curado dessa maneira."
         ],
         "range": "10 metros"
+    },
+    {
+        "name": "Vidência",
+        "school": "Arcana Ardilosa",
+        "description": [
+            "Você conjura um olho flutuante intangível em um ponto no espaço que você determina dentro do alcance, que não precisa estar na sua linha de visão. Enquanto manter concentração, pode enxergar por esse sensor com seus sentidos normais.",
+            "A magia precisa de algum meio - geralmente um espelho, uma piscina ou lago quieto, nuvens ou uma fogueira. Se investir dois dados ou mais, o sensor cresce uma orelha e se investir 3 dados ou mais, o sensor se torna capaz de fala.",
+            "Se usar uma bola de cristal de verdade, o alcance é infinito. Bolas de Cristal são muito raras então nunca são vendidas, mas tem o valor de um Tesouro."
+        ],
+        "range": "[dados] x 20 metros",
+        "duration": "[dados] x 10 metros"
     },
     {
         "name": "Vigor",
