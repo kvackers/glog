@@ -22,7 +22,7 @@ export const DEFAULT_UI_STATE = {
 
 export const SPELL_SCHOOLS = [
     { school: "Animorfose", description: 'Magias relacionadas a se tornar como uma espécie animal' },
-    { school: "Apotropaísmo", description: 'Magias que estudam selos e proteção contra maldições e o mal' },
+    { school: "Apotropaísmo", description: 'Magias que estudam selos e proteção contra o mal' },
     { school: "Elementalismo", description: 'Magias que lidam com os espíritos da terra' },
     { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
@@ -47,6 +47,23 @@ export const SPELLS = [
             "Alternativamente, dá [soma] pontos de dano de veneno a uma criatura tocada, teste para tomar metade, e a deixa bêbada (envenenada) por [soma] horas."
         ],
         "range": "Toque"
+    },
+    {
+        "name": "Alterar Gravidade",
+        "school": "Translocação",
+        "description": [
+            "Você deve lançar essa magia em uma área fechada com um teto sólido.",
+            "A área tem sua gravidade alterada ou em direção ou magnitude, que você especifica pela duração. O efeito acontece gradualmente, então pessoas tem uma chance de fazer um teste para se manter no lugar, se apropriado.",
+            {
+                "ul": [
+                    "Se diminuir a gravidade, você pode pular mais alto e mais longe, mas efetivamente qualquer ação precisa de um teste de DES",
+                    "Se aumentar a gravidade, todos precisam fazer um teste de FOR ou ficam Caídos, podendo repetir o teste periodicamente para levantar."
+                ]
+            },
+            "Se investir 4 dados ou mais, o efeito se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "[soma] rodadas"
     },
     {
         "name": "Amuleto da Mão Aberta",
@@ -125,6 +142,14 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Barganhar",
+        "school": "Translocação",
+        "description": [
+            "Você instantaneamente troca um objeto que você está segurando em sua mão com um objeto que a criatura alvo está segurando na mão dela."
+        ],
+        "range": "[dados] x 10 metros"
+    },
+    {
         "name": "Bode Expiatório",
         "school": "Apotropaísmo",
         "description": [
@@ -161,6 +186,14 @@ export const SPELLS = [
             "Se investir 4 dados ou mais nessa magia, os efeitos se tornam permanentes e eles se tornam parte do seu grupo."
         ],
         "duration": "[dados] horas"
+    },
+    {
+        "name": "Chamado de Retorno",
+        "school": "Translocação",
+        "description": [
+            "Um contêiner marcado com seu Sigilo se transporta para sua posição atual. A capacidade desse contêiner é [dados] itens significantes."
+        ],
+        "duration": "Sigilo"
     },
     {
         "name": "Chamar Destruição",
@@ -215,6 +248,17 @@ export const SPELLS = [
             "Você transforma até [soma] porta-moedas de moedas de cobre ou objeto de cobre equivalente em um veneno verde, cristalino e solúvel em água. Uma dose desse veneno ocupa um espaço no Inventório, dissolve em um copo d'água e faz 1d6 de dano para quem beber por dose, teste para dar metade."
         ],
         "range": "Toque"
+    },
+    {
+        "name": "Coincidência Espacial",
+        "school": "Translocação",
+        "description": [
+            "Você, junto com [dados] companheiros, pode ocupar o mesmo espaço que outro espaço físico, que deve ser grande o suficiente para conter a maior pessoa afetada (alvos que não consintam precisam ser fisicamente forçadas a entrar em um objeto e podem fazer um teste de resistência contra a magia).",
+            "Enquanto dentro de um objeto, personagens não podem se mover, mas percebem os eventos ao seu redor como se filtrado por uma névoa.",
+            "Os alvos podem entrar e sair de objetos como desejarem enquanto a magia durar, mas precisa ser um ato deliberado. Alvos sempre saem por onde entraram (ou seja, não pode usar essa magia para andar através de paredes) e sempre saem do objeto quando a magia acaba."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Contorção",
@@ -288,6 +332,24 @@ export const SPELLS = [
         "duration": "[soma] rodadas"
     },
     {
+        "name": "Desconexão",
+        "school": "Translocação",
+        "description": [
+            "Você desconecta [dados] coisas do tamanho de humanos de qualquer superfície. O menor empurrão faz objetos desconectados saírem deslizando sobre qualquer superfície no chão como se fosse gelo. Qualquer interação por e com tais objetos precisa de um teste ou o objeto (ou criatura) caí e saí deslizando."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Desintegrar",
+        "school": "Translocação",
+        "description": [
+            "[dados] objetos não mágicos do tamanho de uma espada ou menor, ou um objeto de massa equivalente, que você possa ver dentro alcance desintegra.",
+            "Alternativamente, a criatura alvo toma [soma] dano ao longo de 3 rodadas, e você precisa se concentrar nesse efeito. Você não pode fazer outras Ações enquanto estiver usando esse efeito."
+        ],
+        "range": "10 metros"
+    },
+    {
         "name": "Despacho contra Maldições",
         "school": "Apotropaísmo",
         "description": [
@@ -301,6 +363,16 @@ export const SPELLS = [
             "Você faz uma proclamação audaz sobre o futuro de alguém e seu Sigilo os marga em algum lugar discreto. Você fala [dados] maneiras que o alvo NÃO vai morrer. Pela duração da magia, se o alvo fosse morrer de uma dessas causas, você pode decidir ou acabar a magia ou ganhar 1 ponto de Destruição. Se uma Catástrofe acontecer, o alvo que a sofrerá, e não você.",
             "Se investir 4 dados ou mais, o efeito se torna permanente."
         ],
+        "duration": "1 dia"
+    },
+    {
+        "name": "Disco Flutuante",
+        "school": "Translocação",
+        "description": [
+            "Um disco flutuante aparece do seu lado. Sempre flutua na altura do seu umbigo (quando você está em pé) e nunca força peso no chão abaixo dele. Vai automaticamente te seguir, sempre estando dentro de 2 metros de você.",
+            "Pode subir escadas e atravessar água. Tem um inventório de [soma] espaços."
+        ],
+        "range": "Toque",
         "duration": "1 dia"
     },
     {
@@ -334,6 +406,26 @@ export const SPELLS = [
         "duration": "[soma] rodadas"
     },
     {
+        "name": "Equivalência Voluminosa",
+        "school": "Translocação",
+        "description": [
+            "Você transforma um espaço em outro espaço, equivalente à sua escolha.",
+            "Engrave seu sigilo em todas as aberturas de um contêiner ou prédio vazio. Quando a magia for lançada essas aberturas se tornam portais levando a dimensão de bolso do mesmo volume que o espaço original.",
+            "Essa dimensão tem a forma e subdivisões que você quiser, mas tem que ter as mesmas aberturas que o espaço original. Também é feito do mesmo material que o contêiner original.",
+            "O tipo de espaço que pode ser convertido depende da quantidade de dados investidos:",
+            {
+                "ul": [
+                    "Um baú, uma mala ou menor",
+                    "Uma sala de 10 metros x 10 metros ou menor",
+                    "Uma casa de 4 quartos ou menor",
+                    "Qualquer prédio"
+                ]
+            },
+            "Se o prédio ou contêiner for destruído, ou seu sigilo apagado, a dimensão é destruída e os conteúdos são espalhados perto ou dentro do espaço original."
+        ],
+        "duration": "Sigilo"
+    },
+    {
         "name": "Espelho de Heka",
         "school": "Apotropaísmo",
         "description": [
@@ -342,6 +434,15 @@ export const SPELLS = [
             "Refletir uma magia refletida por outro Espelho de Heka provoca uma Catástrofe para as duas criaturas segurando os espelhos."
         ],
         "duration": "Sigilo"
+    },
+    {
+        "name": "Estática",
+        "school": "Translocação",
+        "description": [
+            "Um alvo tocado fica preso no tempo, imóvel (relativo a superfície do mundo) e invincível pela duração da magia. Criaturas podem fazer um teste para resistir a magia."
+        ],
+        "range": "Toque",
+        "duration": "[soma] rodadas"
     },
     {
         "name": "Falar com Sangue",
@@ -367,6 +468,30 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Fluxo de Calor",
+        "school": "Translocação",
+        "description": [
+            "Você olha para [dados] + 1 objetos para transferir calor entre eles.",
+            "Por exemplo, transferir o calor de uma tocha a uma criatura para [soma] dano, ou o frio de uma geleira para apagar uma fogueira. Você não pode amplificar o calor."
+        ],
+        "range": "40 metros"
+    },
+    {
+        "name": "Focar Luz",
+        "school": "Translocação",
+        "description": [
+            "Você foca toda a luz ao seu redor em um único ponto.",
+            {
+                "ul": [
+                    "Se estiver de dia ou perto de uma fonte de luz mágica poderosa, isso causa [dados] + [soma] dano de fogo e o alvo deve fazer um teste de resistência ou ficar Cego por uma Rodada",
+                    "Se estiver uma noite estrelada ou no mar astral, isso causa [soma] dano psíquico e o alvo deve fazer um teste de resistência ou ficar Assustado",
+                    "Caso contrário, dá [dados] dano de fogo e o alvo deve fazer um teste de resistência ou ficar Atordoado por uma rodada"
+                ]
+            }
+        ],
+        "range": "Visão"
+    },
+    {
         "name": "Hibernação",
         "school": "Fisiúrgia",
         "description": [
@@ -375,6 +500,15 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Imagem Espelhada",
+        "school": "Translocação",
+        "description": [
+            "Você cria 1 + [dados] imagens ilusórias de si mesmo, que se movem como você se move e sempre estão dentro de 2 metros de você. Elas estão constantemente passando por dentro da outra, então é impossível dizer quem é quem.",
+            "Quando um ataque for te atingir, role 1d6 para ver se o ataque atinge você ou uma imagem. Se rolar menor ou igual que o número de imagens, o ataque atinge uma imagem invés de você. Se o ataque causaria dano, a imagem some. Efeitos de área (como o sopro de um dragão) dissipam todas as imagens."
+        ],
+        "duration": "10 minutos"
     },
     {
         "name": "Lareira Interna",
@@ -393,6 +527,16 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[soma] horas"
+    },
+    {
+        "name": "Levitação",
+        "school": "Translocação",
+        "description": [
+            "Você solta [dados] objetos de tamanho menor ou equivalente de um humano das amarras da gravidade. Você decide a altura que o objeto vai flutuar por padrão, até um máximo de [dados] x 4 metros. Quando a magia acabar, o objeto cai gentilmente ao chão.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "10 minutos"
     },
     {
         "name": "Luz de Aviso",
@@ -442,6 +586,15 @@ export const SPELLS = [
         "duration": "Sigilo"
     },
     {
+        "name": "Órbita",
+        "school": "Translocação",
+        "description": [
+            "O item alvo flutua gentilmente no ar, orbitando um objeto maior ou seu corpo (se for maior) pela duração. Enquanto o item orbitar, ele pode ser perturbado e pego com facilidade e não tem peso."
+        ],
+        "range": "Toque",
+        "duration": "[dados] horas"
+    },
+    {
         "name": "Os 10 Selos",
         "school": "Apotropaísmo",
         "description": [
@@ -477,6 +630,33 @@ export const SPELLS = [
         ],
         "range": "10 metros",
         "duration": "[dados] rodadas"
+    },
+    {
+        "name": "Piscadas Espacias",
+        "school": "Translocação",
+        "description": [
+            "Seu sigilo aparece no chão abaixo dos seus pés. Para a duração dessa magia, você teleporta de volta ao seu Sigilo no fim de cada rodada."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 2 rodadas"
+    },
+    {
+        "name": "Portal",
+        "school": "Translocação",
+        "description": [
+            "Você põe um Sigilo de Portal em duas portas e, ao lançar a magia, as conecta de tal formas que se tornam a mesma porta enquanto os Sigilos durarem.",
+            "O portal pode ser usado [dados] vezes antes de quebrar, mas se investir 4 dados ou mais, o efeito é permanente.",
+            "Se uma das portas for danificada o suficiente, tem uma chance de [dados] em 6 que alguém passando pelo portal NÂO vai se peder no mar astral"
+        ],
+        "duration": "Sigilo"
+    },
+    {
+        "name": "Portal Vivo",
+        "school": "Translocação",
+        "description": [
+            "Você escreve seu Sigilo em um ser vivo",
+            "Ao lançar essa magia, você e [dados] companheiros podem entrar no corpo do alvo como se fosse uma porta e sair de qualquer membro ou orifício até [dados] rodadas depois. A criatura precisa fazer um teste ou tomar 1d[dados] dano por viajante, mas esse dano nunca vai o matar."
+        ]
     },
     {
         "name": "Possuir Pet",
@@ -520,6 +700,15 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Projeção Espacial",
+        "school": "Translocação",
+        "description": [
+            "Você se teleporta para um lugar que possa ver, e quando a magia acabar, se teleporta pro lugar onde lançou a magia."
+        ],
+        "range": "Visão",
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Reanimar",
         "school": "Fisiúrgia",
         "description": [
@@ -536,6 +725,16 @@ export const SPELLS = [
             }
         ],
         "range": "Toque"
+    },
+    {
+        "name": "Redimensionar",
+        "school": "Translocação",
+        "description": [
+            "A parte do corpo alvo ou objeto (não maior que uma perna nem menor que uma ervilha) muda suas dimensões, ficando até a metade ou dobro de seu tamanho em cada eixo. Se o alvo for parte de uma criatura, ela pode fazer um teste de resistência para evitar o efeito.",
+            "Se 4 ou mais dados forem investidos e escrever seu Sigilo no alvo, o efeito se torna permanente. Você não precisa escrever seu Sigilo se o alvo for si mesmo."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Reflexos Felinos",
@@ -565,6 +764,15 @@ export const SPELLS = [
             "Se investir 4 dados ou mais e a conveniência for irônica em pelo menos 4 vezes, você pode decidir que ela é mortal: o alvo faz um teste ou morre."
         ],
         "range": "60 metros"
+    },
+    {
+        "name": "Revisitação",
+        "school": "Translocação",
+        "description": [
+            "Você precisa ter marcado um locar com seu Sigilo para lançar essa magia.",
+            "[dados] pessoas são transportados para o local do seu Sigilo. O sigilo precisa ser inscrito sob luz solar e vai ser destruído se movido do local onde foi engravado."
+        ],
+        "range": "Toque"
     },
     {
         "name": "Rito do Sétimo Dia",
@@ -668,6 +876,43 @@ export const SPELLS = [
         "range": "20 metros"
     },
     {
+        "name": "Teletransporte",
+        "school": "Translocação",
+        "description": [
+            "[dados] criaturas, de mãos dadas, você incluso, teleportam para um lugar que você consiga ver. Role 1d20, se rolar menos que [dados], escolha se:",
+            {
+                "ul": [
+                    "cada criatura ganha uma mutação aleatória",
+                    "toma 1d4 criaturas",
+                    "se perde no mar astral"
+                ]
+            },
+            "Alternativamente, se estiver em uma masmorra, você pode se teleportar para uma sala aleatória em segurança."
+        ],
+        "range": "Visão"
+    },
+    {
+        "name": "Transmitir Fôlego",
+        "school": "Translocação",
+        "description": [
+            "[dados] criaturas não precisam respirar para sobreviver pela duração dessa magia.",
+            "No lugar disso, você inscreve uma runa e a atmosfera ao redor dela é magicamente transmitida para os pulmões das criaturas selecionadas durante o lançamento da magia.",
+            "Se investir 4 dados ou mais e usar um Sigilo, o efeito se torna permanente."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Tudo Adjacente",
+        "school": "Translocação",
+        "description": [
+            "Você está adjacente a tudo e todos na sua linha de visão. Você consegue interagir com tudo que você vê, mas por consequência, você é afetado como se estivesse em todos os lugares ao mesmo tempo.",
+            "Em termos de combate em grade, você é afetado por todos os efeitos de área, mas não sofre múltiplos efeitos da mesma fonte.",
+            "Obviamente lançar essa magia quando pode-se ver estrelas é instantaneamente fatal."
+        ],
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Último Juramento",
         "school": "Fisiúrgia",
         "description": [
@@ -695,4 +940,4 @@ export const SPELLS = [
         "range": "Visão",
         "duration": "[dados] x 10 minutos"
     }
-]
+];

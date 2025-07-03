@@ -56,7 +56,10 @@ function SpellsBySchools() {
     })}
     </div>
     
-    <p>${SPELL_SCHOOLS.filter(e => e.school === school)[0].description}</p>
+    <p>
+        <span class="header"><strong>${school}: </strong></span> 
+        ${SPELL_SCHOOLS.filter(e => e.school === school)[0].description}
+    </p>
     <p>Na descrição de magias, [dados] se refere ao número de DMs investidos e [soma] à soma desses dados
         quando rolados.</p>
     ${SPELLS.filter(sp => sp.school === school).map(sp => html`<${Spell} spell=${sp} />`)}`;
