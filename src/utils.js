@@ -105,6 +105,15 @@ export const SPELLS = [
         "duration": "Sigilo"
     },
     {
+        "name": "Armadura de Lixo",
+        "school": "Truques",
+        "description": [
+            "Items aleatórios que você carrega se agrupam ao seu redor fazendo uma armadura improvisada.",
+            "Você precisa ter itens no seu Inventório para a magia funcionar. O dano que você recebe é reduzido por [dados]. Cada vez que tomar dano, role 1d6 e se rolar 1, sacrifique um item do seu Inventório (pilhas contam como um item, Cicatrizes não contam)."
+        ],
+        "duration": "1 hora"
+    },
+    {
         "name": "Assustar Besta",
         "school": "Animorfose",
         "description": [
@@ -294,6 +303,24 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Comandar Ferro",
+        "school": "Truques",
+        "description": [
+            "Você fala com a voz da forja. Um objeto de metal é animado e precisa imediatamente obedecer uma ordem de [dados] verbos.",
+            "A ordem precisa ser feita em um gesto. Objetos mágicos podem fazer um teste de resistência."
+        ],
+        "range": "20 metros"
+    },
+    {
+        "name": "Comandar Moedas",
+        "school": "Truques",
+        "description": [
+            "Todas as moedas em alcance se levantam e obedecem seus comandos de uma palavra. Elas podem fazer muitas coisas, mas não tem mente própria e são fracas."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Contorção",
         "school": "Animorfose",
         "description": [
@@ -454,6 +481,16 @@ export const SPELLS = [
         "duration": "[soma] horas"
     },
     {
+        "name": "Engraxar",
+        "school": "Truques",
+        "description": [
+            "Você causa uma área de [dados] x 16 metros quadrados ou [dados] objetos ficarem cobertos em uma graxa escorregadia e inflamável. Para se mover através da área ou segurar um objeto engraxado, você precisa fazer um teste de resistência. Em falha, solte o objeto ou fique Caído.",
+            "Se a graxa for acendida, ela causa 1d6 de dano de fogo a cada rodada por [dados] rodadas antes de queimar completamente."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Enxame de Moscas",
         "school": "Animorfose",
         "description": [
@@ -511,6 +548,32 @@ export const SPELLS = [
         "duration": "[soma] rodadas"
     },
     {
+        "name": "Excambion",
+        "school": "Truques",
+        "description": [
+            "Você troca as propriedades de dois objetos inanimados em alcance. Cada objeto tem as quatro seguintes Propriedades, como determinadas pelo GM e que são obviamente visiveis para você durante o processo de lançamento:",
+            {
+                "ul": [
+                    "Propósito: o que objeto foi feito para fazer?",
+                    "Material: qual é o material mais importante do objeto?",
+                    "Tamanho: qual é o tamanho aproximado do objeto?",
+                    "Benção: o objeto é mágico ou tocado por mágica? amaldiçoado? abençoado?"
+                ]
+            },
+            "Você pode selecionar até [dados] propriedades e as trocar entre os objetos alvo. Se investir 4 dados ou mais e escrever seu Sigilo nos objetos, o efeito se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] horas"
+    },
+    {
+        "name": "Explodir Álcool",
+        "school": "Truques",
+        "description": [
+            "O líquido alcóolico alvo explode, infligindo [soma] dado de impacto para todos por perto. O alcance da explosão depende da quantidade, sendo 4 metros se for menos que um barril e 10 se for pelo menos um barril. Um teste de resistência divide o dano em dois."
+        ],
+        "range": "30 metros"
+    },
+    {
         "name": "Explosão Elemental",
         "school": "Elementalismo",
         "description": [
@@ -537,6 +600,16 @@ export const SPELLS = [
             "Caso contrário, você pode dar um novo desejo ao dono do sangue com quem falou."
         ],
         "duration": "[soma] minutos"
+    },
+    {
+        "name": "Fazer as Malas",
+        "school": "Truques",
+        "description": [
+            "Objetos dentro do alcance, na sua linha de visão são arrumados com esmero. Você precisa nomear os objetos ou sua categoria geral (\"aquelas moedas\", \"o conteúdo daquela sala\").",
+            "Se um contêiner não for provido, os objetos vão ser empilhados em cubos compactos, com os objetos maiores e mais estáveis no fundo.",
+            "Os objetos precisam se mexer livremente e objetos não vão se levantar mais que 2 metros do chão durante o processo."
+        ],
+        "range": "[dados] x 2 m"
     },
     {
         "name": "Fiadeira Sedosa",
@@ -604,12 +677,29 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Intenções do Chefe",
+        "school": "Truques",
+        "description": [
+            "Ao tocar um prato de comida, você pode codificar uma mensagem secreta na comida de [dados] + [soma] palavras. Qualquer um que comer a comida vai ouvir a mensagem."
+        ],
+        "duration": "1 dia"
+    },
+    {
         "name": "Invocar Água",
         "school": "Elementalismo",
         "description": [
             "Você grita o brado do azul profundo enquanto toca um contêiner. Toda a água dentro do alcance é imediatamente puxado para dentro do contêiner (potencialmente o transbordando)."
         ],
         "range": "[dados] x 10 metros"
+    },
+    {
+        "name": "Laço Arcano",
+        "school": "Truques",
+        "description": [
+            "Você comanda uma corda a amarrar [dados] criaturas juntas. As vítimas tem que estar dentro do alcance da corda e podem evitar ser amarradas se passarem em um teste de resistência."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Lareira Interna",
@@ -628,6 +718,14 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[soma] horas"
+    },
+    {
+        "name": "Leitura de Objetos",
+        "school": "Truques",
+        "description": [
+            "Você pode ler as impressões psíquicas em objetos causados pela história do item. Mecanicamente, você pode fazer [dados] perguntas de um verbo para o GM sobre a história."
+        ],
+        "range": "Toque"
     },
     {
         "name": "Levitação",
@@ -669,6 +767,16 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Mão na Corda",
+        "school": "Truques",
+        "description": [
+            "Você amarra uma corda ao redor da sua cintura e faz ela agir como uma terceira mão, controlada mentalmente mas semi-senciente. A corda pode empunhar uma arma leve e fazer um ataque extra em combate.",
+            "Se investir 4 dados ou mais e inscrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Mensagem do Vento",
         "school": "Elementalismo",
         "description": [
@@ -688,6 +796,15 @@ export const SPELLS = [
         "duration": "[dados] rodadas"
     },
     {
+        "name": "Missa da Candelária",
+        "school": "Truques",
+        "description": [
+            "Você conjura [soma] velas flutuantes acesas ao seu redor. Cada uma se comporta como uma vela normal, mas não podem ser apagadas, têm tamanho constante e vão queimar até mesmo debaixo d'água.",
+            "Elas podem ser facilmente coladas em uma superfície sólida imóvel, e se forem, duram 1 hora. As velas só iluminam 4 metros."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Morte à Vida",
         "school": "Fisiúrgia",
         "description": [
@@ -698,12 +815,32 @@ export const SPELLS = [
         "range": "Toque"
     },
     {
+        "name": "Nó Universal",
+        "school": "Truques",
+        "description": [
+            "Você faz um nó com um pedaço de corda e [dados] objetos não vivos se fecham e/ou se trancam. Se o objeto for uma porta, baú ou objeto similar, vão bater, dando [soma] dano para qualquer criatura com partes no caminho, e as prendendo. São necessários pelo menos [dados] rodadas para arrombar um tal objeto.",
+            "Alternativamente, você faz um nó e o desata. [dados] objetos não vivos se abrem e/ou se destrancam."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Nove Vidas",
         "school": "Animorfose",
         "description": [
             "Você tatua seu Sigilo sobre seu coração. Nas próximas [dado] vezes que você tomar dano que te levaria a 0 PV ou menos, invés de Morrer ganhe 1 ponto de Destruição."
         ],
         "duration": "Sigilo"
+    },
+    {
+        "name": "O Truque da Corda",
+        "school": "Truques",
+        "description": [
+            "Você toca uma corda e ela imediatamente se levanta e se prende em um escaninho entre dimensões. Até [dados] pessoas podem ocupar o escaninho confortavelmente, com o dobro se comforto não for um problema.",
+            "Depois que quem lançou a magia entrar no escaninho, a magia não acaba até ele sair. O lançador da magia também pode puxar a corda pra dentro do escaninho (e jogá-la pra fora de novo)."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Onda de Trovão",
@@ -1097,6 +1234,16 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "1 dia"
+    },
+    {
+        "name": "Virar Arte",
+        "school": "Truques",
+        "description": [
+            "Um alvo que falhar um teste de resistência vira um objeto de arte pela duração. Você pode escolher o tipo de arte, mas deve manter as dimensões do alvo e ser evocativo dos traços originais.",
+            "Dano ou mudanças feitas na obra acabam a magia, mas se retém no alvo. Investir 4 dados ou mais e assinar seu Sigilo fazem o efeito ser permanente."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Zoofobia",
