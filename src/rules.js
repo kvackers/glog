@@ -127,7 +127,7 @@ export function Rules() {
         <p><strong>Traumas:</strong> Traumas ocupam espaços de Psique e só podem ser removidos ao arriscar sua própria vida
         por uma de suas Crenças. Anote o que causou o Trauma. Enquanto você o tiver, você tem desvantagem contra aquela coisa.</p>
         
-        <p><strong>Descanso Curto:</strong> Um descanso de 30 minutos recupera 1 dado de vida e consome 1 ração ou 1 dose de água.</p>
+        <p><strong>Descanso Curto:</strong> Um descanso de 30 minutos recupera 1d6 PV e consome 1 ração ou 1 dose de água.</p>
         
         <p><strong>Descanso Longo:</strong> Um descanso de 8 horas recupera todos os PVs e consome 1 ração por pessoa.
         Descansos longos precisam de abrigo e calor.</p>

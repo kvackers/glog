@@ -423,5 +423,86 @@ export function Classes() {
             
             <h4>Sincretismo</h4>
             <p>Você pode escolher o Template A de outra classe e tratar como se fosse simultaneamente um Template dessa classe e de outra.</p>
+        </section>
+        
+        <section class="${displayClass("geralB")} pb-3">
+            <h2>Ladino</h2>
+
+            <h4>Equipamento Inicial:</h4>
+            <ul>
+                <li>1 Arma Leve</li>
+                <li>2 objetos não mágicos à sua escolha</li>
+            </ul>
+
+            <h4>Perícias Iniciais</h4>
+            <p>Uma carreira em que você falhou e uma das opções abaixo:</p>
+            <ul>
+                <li>Escalar</li>
+                <li>Disfarces</li>
+                <li>Mentir</li>
+                <li>Furtividade</li>
+            </ul>
+
+            <h4>Templates</h4>
+            <p>Para cada Template de Ladino, você ganha um <strong>Truque</strong>.</p>
+
+            <ol type="A">
+                <li>Pau para toda obra, Preparação</li>
+                <li>Expertise</li>
+                <li>Truque extra</li>
+                <li>Maestria</li>
+            </ol>
+
+            <h4>Truques</h4>
+            <p>Cada vez que for aprender um <strong>Truque</strong> novo, role duas vezes na tabela abaixo e escolha. Rerole se já souber.</p>
+
+            <details class="pb-3">
+                <summary>1d20 Truques</summary>
+
+                <ol>
+                    <li>Imunidade Adquirida - Você consegue sentir cheiro de veneno. Resistir venenos é um teste fácil</li>
+                    <li>Acrobata - Testes de Movimento são um passo mais fácil. Você toma 10 pontos de dano a menos de queda.</li>
+                    <li>Assassino - Para cada fato não trivial que souber do alvo, seus ataques dão 1d6 mais dano. Usável uma vez por fato por alvo.</li>
+                    <li>Olhos de Gato - Você consegue ver no escuro como se tivesse uma tocha</li>
+                    <li>Médico de Campo - Testes para estabilizar aliados Morrendo são um passo mais fáceis.</li>
+                    <li>Fofoca - Uma vez por sessão, você escuta ou se lembra de um fato vergonhoso sobre uma pessoa, como dito pelo GM</li>
+                    <li>Palhaço - Você pode fazer se parecer a pessoa mais ou menos importante do grupo a qualquer momento</li>
+                    <li>Sortudo - Uma vez por dia, rerole uma rolagem feita com d20. Pode ativar depois do fato.</li>
+                    <li>Talentoso - Aprenda uma Perícia nova a sua escolha</li>
+                    <li>Mente Aberta - Ganhe +3 Espaços de Psique</li>
+                    <li>Organizado - Ganhe +3 Espaços de Inventório</li>
+                    <li>Oportunista - Quando tiver alguma vantagem em combate dê mais 1d6 de dano</li>
+                    <li>Bonvivant - Se Festejar, se você Celebrar você pode esquecer um Trauma independente se se arriscou por uma Crença</li>
+                    <li>Observador - Você nunca fica surpreso. Em combate, você sempre consegue fazer uma rodada inteira antes de todo mundo</li>
+                    <li>Segunda Chance - Uma vez na sua vida, você pode voltar dos mortos sem problema</li>
+                    <li>Reflexos de Gato - Testes de esquiva se tornam um passo mais fácil se não usar armadura</li>
+                    <li>Lutador - Armas improvisadas dão 1d8 de dano nas suas mãos</li>
+                    <li>Refeição Completa - Um Descanso Curto recupera 1d8 de vida se você tomar Álcool</li>
+                    <li>Redirecionar - Se o resultado de um teste de esquiva for maior que 20, você pode redirecionar o ataque a uma criatura adjacente</li>
+                    <li>Autodidata - Você tem 1 DM que se recupera em Descansos Curtos e sabe 1 Magia da escola de Truques</li>
+                </ol>
+            </details>
+
+            <h4>Pau para toda obra</h4>
+            <p>Você ganha 3 Perícias a sua escolha (as guarda na sua Psique) e ganha 3 espaços de Psique a mais.</p>
+
+            <h4>Preparação</h4>
+            <p>Em uma cidade você pode se perder na multidão e comprar, em um mercado negro, em um beco estranho ou algum lugar similar, um Pacote Não Marcado por uma quantia Artesanal.</p>
+
+            <p>Quando o pacote for aberto ou deixar sua possessão, você precisa declarar o que ele tem. Precisa ser um item mundano com valor Artesanal ou menor.</p>
+
+            <p>Esse item representa o preparo de sempre comprar o item certo.</p>
+
+            <h4>Expertise</h4>
+            <p>Escolha uma Perícia que tiver, você sempre tem sucesso em testes com ela.</p>
+
+            <h4>Maestria</h4>
+            <p>Você consegue coisas além das suas habilidades. Escolha uma das opções aplicáveis:</p>
+            <ul>
+                <li>Se tiver Perícia em Escalar, você consegue escalar qualquer superfície, mesmo de cabeça pra baixo</li>
+                <li>Se tiver Perícia em Disfarces, você pode declarar que está saindo da área e depois declarar que era um dos NPCs menos importantes o tempo todo.</li>
+                <li>Se tiver Perícia em Mentir, uma vez por sessão, você pode refazer sua rodada se não estiver satisfeito com o que aconteceu.</li>
+                <li>Se tiver Perícia em Furtividade, você se torna Invisível se passar um teste de furtividade com mais de 20.</li>
+            </ul>
         </section>`;
 }
