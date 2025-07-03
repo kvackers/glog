@@ -66,7 +66,7 @@ export function Rules() {
         <h2>Inventório e Psique</h2>
         <p>Seu <strong>Inventório</strong> tem tantos espaços quanto o dobro de sua Força.</p>
 
-        <p>Esses espaços podem ser preenchidos com objetos. Itens pequenos como poços, adagas e munição podem ser agrupados
+        <p>Esses espaços podem ser preenchidos com objetos. Itens pequenos como poções, adagas e munição podem ser agrupados
         no seu Inventório em grupos de 10. Se carregar mais que sua capacidade, você fica <strong>Caído</strong>.</p>
 
         <p>Sua <strong>Psique</strong> tem tantos espaços quanto o dobro de sua Vontade.</p>
@@ -89,7 +89,13 @@ export function Rules() {
         <p><strong>Defender:</strong> O GM vai dizer se o ataque é fácil, normal ou difícil de esquivar. Role Destreza.
         Se rolar 1, toma o dobro do dano.</p>
 
-        <details class="pb-3">
+        <p>Alguns efeitos dizem para subir ou descer um dado de dano. Eles mudam da seguinte maneira:</p>
+        <diceprog>
+        1 ↔ 1d4 ↔ 1d6 ↔ 1d8 ↔ 1d10 ↔ 1d12 ↔ 2d6<br />
+        2d6 ↔ 2d8 ↔ 2d10 ↔ 2d12 ↔ 3d8 ↔ 3d10 ↔ 3d12 ↔ 4d10
+        </diceprog>
+
+        <details class="pt-3 pb-3">
         <summary class="header"><strong>Exemplo: Combate</strong></summary>
         
         <p>Bruno está lutando com um troll perigoso. Ele vai primeiro. No seu turno, ele grita para Alice deixar de covardia,

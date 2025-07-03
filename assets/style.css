@@ -22,3 +22,10 @@ h5,
     font-weight: 200;
     font-style: normal;
 }
+
+diceprog {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #888;
+    display: block;
+}
