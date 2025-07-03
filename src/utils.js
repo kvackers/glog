@@ -17,8 +17,54 @@ export function impureSetTheme(preference) {
 
 export const DEFAULT_UI_STATE = {
     theme: readThemePreference(),
-    tab: "spells",//"rules"
+    tab: "classes",//"rules"
 };
+
+export const SACRAMENTS = [
+    {
+        name: "Untar a espada do Conquistador",
+        powers: [
+            "Você pode gastar um DM quando ataca e adicionar a soma aos seus teste de ataque e ao dano.",
+            "Quando atingir um inimigo com uma arma ou tomar dano de uma arma, você ganha 1 DM pro próximo turno.",
+        ],
+        spells: [
+            "Bainha de Sangue",
+            "Curar",
+            "Nove Vidas",
+            "Reflexos Felinos"
+        ]
+    },
+    {
+        name: "Se banhar no Elemento Sagrado",
+        powers: [
+            "Escolha qual é o Elemento Sagrado. Você o molda como argila",
+            "Se o seu corpo estiver coberto pelo Elemento Sagrado você ganha 1 DM de graça.",
+        ],
+        spells: [
+            "Capa Elemental", "Elementomorfose", "Explosão Elemental", "Parede Elemental"
+        ]
+    },
+    {
+        name: "Comunhão com a Besta Sagrada",
+        powers: [
+            "Escolha qual animal é a Besta Sagrada. Você pode falar com esse animal",
+            "Contanto que você aja como a Besta Sagrada você ganha 1 DM de graça."
+        ],
+        spells: [
+            "Animorfar", "Dar Aspecto de [Animal]", "Charme Animal", "Chamada do Animal"
+        ]
+    },
+    {
+        name: "Declamar as 100 Sabedorias",
+        powers: [
+            "Se for rolar por uma nova magia, role duas vezes e escolha. Você pode fazer isso de maneira retroativa para seus outros Sacramentos.",
+            "Cada sessão você ganha 1 DM de graça (que não volta depois de expirado)."
+        ],
+        spells: [
+            "Projeção Espacial", "Destruição Profetizada", "Rito do Sétimo Dia", "Amuleto da Mão Aberta"
+        ]
+    },
+]
 
 export const SPELL_SCHOOLS = [
     { school: "Animorfose", description: 'Magias relacionadas a se tornar como uma espécie animal' },

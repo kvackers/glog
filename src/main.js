@@ -6,6 +6,7 @@ import htm from 'https://esm.sh/htm@3.1.1';
 import { impureSetTheme, DEFAULT_UI_STATE } from "./utils.js";
 import { Rules } from "./rules.js";
 import { Spells } from "./spells.js";
+import { Classes } from './classes.js';
 
 const html = htm.bind(h);
 
@@ -32,7 +33,8 @@ function App() {
     useEffect(() => impureSetTheme(uiState.theme), [uiState.theme]);
 
     const display = uiState.tab === "rules" ? html`<${Rules} />` :
-        html`<${Spells} />`;
+        uiState.tab === "spells" ? html`<${Spells} />` :
+            html`<${Classes} />`;
 
     return html`
         <${Navbar} ui=${uiState} setUI=${setUIState} />
