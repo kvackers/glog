@@ -86,7 +86,7 @@ export function Classes() {
             <p>Escolha três vezes das opções abaixo:</p>
             <ul>
                 <li>1 arma à sua escolha</li>
-                <li>12 unidades de munição</li>
+                <li>20 unidades de munição</li>
                 <li>Uma peça de armadura</li>
                 <li>Um escudo</li>
             </ul>
@@ -504,5 +504,66 @@ export function Classes() {
                 <li>Se tiver Perícia em Mentir, uma vez por sessão, você pode refazer sua rodada se não estiver satisfeito com o que aconteceu.</li>
                 <li>Se tiver Perícia em Furtividade, você se torna Invisível se passar um teste de furtividade com mais de 20.</li>
             </ul>
+        </section>
+        
+        <section class="${displayClass("faunaA")} pb-3">
+            <h2>Elfo</h2>
+
+            <h4>Equipamento Inicial:</h4>
+            <ul>
+                <li>1 Arco e 20 Flechas</li>
+                <li>1 Jóia que também é um Grimório miniatura</li>
+                <li>1 Pet Animal da Floresta <strong>ou</strong> 1 Instrumento Musical</li>
+            </ul>
+
+            <h4>Perícias Iniciais</h4>
+            <p>Escolha uma das opções abaixo:</p>
+            <ul>
+                <li>Decoro Político</li>
+                <li>Belas Artes</li>
+                <li>A Era-Antes-Das-Coisas-Ficarem-Feias</li>
+            </ul>
+
+            <h4>Templates</h4>
+            <p>Para cada Template de Elfo, você ganha 1 DM e aprende uma nova magia da lista de Magias Élficas.</p>
+
+            <ol type="A">
+                <li>Magia Élfica, Fardo da Perfeição</li>
+                <li>Noblesse Oblige</li>
+                <li>Tiro Perfeito I</li>
+                <li>Tiro Perfeito II</li>
+            </ol>
+
+            <h4>Magia Élfica</h4>
+            <p>Suas magias são guardadas na sua Psique e você gasta DMs para lançá-las. Você as recupera depois de um Descanso Longo em que você não está feio, sujo, molhado, humilhado, etc.</p>
+
+            <details class="pb-3">
+                <summary>1d10 Magias Élficas</summary>
+
+                <ol>
+                    <li>Embelezar</li>
+                    <li>Destruição Profetizada</li>
+                    <li>Lâmina de Grama</li>
+                    <li>Crescendo da Vida</li>
+                    <li>Restorar</li>
+                    <li>Mensagem do Vento</li>
+                    <li>Charme [Animal]</li>
+                    <li>Sentidos Apurados</li>
+                    <li>Cura</li>
+                    <li>Falar com Pássaros</li>
+                </ol>
+            </details>
+
+            <h4>Fardo da Perfeição</h4>
+            <p>Quando estiver feio, sujo, molhado, humilhado, etc. todos seus testes são difíceis, mas quando não estiver seus testes são um passo mais fáceis.</p>
+
+            <h4>Noblesse Oblige</h4>
+            <p>Sua superioridade vem com o dever moral de ajudar as pessoas inferiores. Você sempre sabe a luta de qualquer sociedade que você passa. Esse conhecimento é superficial, como se fosse uma nota de rodapé, porque não é nada comparada à rica história élfica.</p>
+
+            <h4>Tiro Perfeito I</h4>
+            <p>Quando atingir um alvo com uma flecha, você pode lançar uma magia ao mesmo tempo sem usar DMs. O valor de [dados] é 1 e [soma] é o dano infligido.</p>
+
+            <h4>Tiro Perfeito II</h4>
+            <p>Você pode atacar com seu arco uma vez a mais em uma rodada, desde que não esteja feio, sujo, molhado, humilhado, etc.</p>
         </section>`;
 }
