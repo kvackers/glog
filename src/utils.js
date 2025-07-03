@@ -17,7 +17,7 @@ export function impureSetTheme(preference) {
 
 export const DEFAULT_UI_STATE = {
     theme: readThemePreference(),
-    tab: "classes",//"rules"
+    tab: "rules"
 };
 
 export const SACRAMENTS = [
