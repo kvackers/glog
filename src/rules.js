@@ -21,7 +21,8 @@ export function Rules() {
         <h2>Criando uma Personagem</h2>
         <p>Você tem três atributos principais:
         <strong>Força (FOR)</strong>, <strong>Destreza (DES)</strong> e <strong>Vontade (VON)</strong>. 
-        Role <strong>1d6 + 2</strong> para determinar o valor de cada.</p>
+        Para cada atributo, em ordem, role <strong>1d6 + 2</strong> duas vezes e guarde o maior valor.
+        Caso queira, troque dois valores de lugar.</p>
 
         <p>Força determina sua resistência e quanto você consegue carregar,
         Destreza determina sua habilidade em combate e Vontade determina sua resistência a adversidade e quantos poderes
@@ -39,7 +40,7 @@ export function Rules() {
         <p>Ou seja, se tem Nível 1 em uma Classe, você tem o Template A. Se tem Nível 2, tem os Templates A e B. Se não puder pegar
          o Template, você não pode pegar o Nível da Classe.</p>
 
-        <p>Dê à sua personagem 1 ou 2 <strong>Crenças</strong>, que você deve adicionar à sua Psique. Crenças são qualquer coisa
+        <p>Dê à sua personagem uma <strong>Crença</strong>, que você deve adicionar à sua Psique. Crenças são qualquer coisa
         que impulsione a personagem a ir se aventurar: coisas pelas quais vale a pena morrer.</p>
         
         <h2>Perícias e Crenças</h2>
