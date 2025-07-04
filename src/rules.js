@@ -21,8 +21,7 @@ export function Rules() {
         <h2>Criando uma Personagem</h2>
         <p>Você tem três atributos principais:
         <strong>Força (FOR)</strong>, <strong>Destreza (DES)</strong> e <strong>Vontade (VON)</strong>. 
-        Para cada atributo, em ordem, role <strong>1d6 + 2</strong> duas vezes e guarde o maior valor.
-        Caso queira, troque dois valores de lugar.</p>
+        Para determinar seus atributos <strong>1d6 + 2</strong> três vezes e distribua os valores como desejar.</p>
 
         <p>Força determina sua resistência e quanto você consegue carregar,
         Destreza determina sua habilidade em combate e Vontade determina sua resistência a adversidade e quantos poderes
