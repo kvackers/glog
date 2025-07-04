@@ -33,7 +33,11 @@ export function Rules() {
         e uma <strong>Psique</strong> tão grande quanto o dobre de sua VON.</p>
 
         <p>Escolha uma <strong>Classe</strong>, adicione o equipamento inicial ao seu Inventório e as <strong>Perícias</strong>
-        e <strong>Magias</strong> (se houverem) à sua Psique. Tome nota das Habilidades.</p>
+        e <strong>Magias</strong> (se houverem) à sua Psique. A cada nível de Classe que você toma, você pega o primeiro Template
+         da Classe que você ainda não pegou, em ordem alfabética.</p>
+
+        <p>Ou seja, se tem Nível 1 em uma Classe, você tem o Template A. Se tem Nível 2, tem os Templates A e B. Se não puder pegar
+         o Template, você não pode pegar o Nível da Classe.</p>
 
         <p>Dê à sua personagem 1 ou 2 <strong>Crenças</strong>, que você deve adicionar à sua Psique. Crenças são qualquer coisa
         que impulsione a personagem a ir se aventurar: coisas pelas quais vale a pena morrer.</p>
