@@ -46,14 +46,51 @@ function SpellsBySchools() {
     const [school, setSchool] = useState("Animorfose");
 
     return html`
-    <div class="d-flex pt-3 pb-3 btn-toolbar justify-content-around">
-        ${SPELL_SCHOOLS.map(e => {
-        return html`
-            <button class="btn btn-outline-secondary header mb-2"
-                    onclick=${() => setSchool(e.school)}>
-                ${e.school}
-            </button>`;
-    })}
+    <div class="btn-group w-100" role="group">
+            <button class="btn btn-outline-secondary header mb-1 w-33"
+                    onclick=${() => setSchool("Animorfose")}>
+                Animorfose
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-33"
+                    onclick=${() => setSchool("Apotropaísmo")}>
+                Apotropaísmo
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-33"
+                    onclick=${() => setSchool("Arcana Ardilosa")}>
+                Arcana Ardilosa
+            </button>            
+    </div>
+    <div class="btn-group w-100" role="group">
+            <button class="btn btn-outline-secondary header mb-1 w-25"
+                    onclick=${() => setSchool("Elementalismo")}>
+                Elementalismo
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-25"
+                    onclick=${() => setSchool("Fisiúrgia")}>
+                Fisiúrgia
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-25"
+                    onclick=${() => setSchool("Hekafísica")}>
+                Hekafísica
+            </button>   
+            <button class="btn btn-outline-secondary header mb-1  w-25"
+                    onclick=${() => setSchool("Psicomancia")}>
+                Psicomancia
+            </button>            
+    </div>
+    <div class="btn-group w-100 mb-2" role="group">
+            <button class="btn btn-outline-secondary header mb-1 w-33"
+                    onclick=${() => setSchool("Translocação")}>
+                Translocação
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-33"
+                    onclick=${() => setSchool("Truques")}>
+                Truques
+            </button>
+            <button class="btn btn-outline-secondary header mb-1  w-33"
+                    onclick=${() => setSchool("Vivimancia")}>
+                Vivimancia
+            </button>            
     </div>
     
     <p>
