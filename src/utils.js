@@ -73,6 +73,7 @@ export const SPELL_SCHOOLS = [
     { school: "Elementalismo", description: 'Magias que lidam com os espíritos da terra' },
     { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
     { school: "Hekafísica", description: "O estudo e a manipulação da magia em si" },
+    { school: "Psicomancia", description: "Truques mentais que dão benefícios temporários" },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
     { school: "Truques", description: 'A arte de encantar objetos do dia-a-dia de modo utilitário' },
     { school: "Vivimancia", description: 'A ciência da carne, crescimento e evolução' },
@@ -113,6 +114,16 @@ export const SPELLS = [
         ],
         "range": "20 metros",
         "duration": "[soma] rodadas"
+    },
+    {
+        "name": "Amansar",
+        "school": "Psicomancia",
+        "description": [
+            "A criatura alvo fica menos agressiva em relação ao lançador da magia, ignorando a magia óbvia que você lançou: hostis viram neutros, neutros viram amigos, amigos ficam Encantados.",
+            "Amigos estão abertos a te servir, dado algum incentivo, enquanto Encantados não precisam de incentivos. Se investir 4 ou mais dados e escrever seu Sigilo, o efeito vira permanente."
+        ],
+        "range": "20 metros",
+        "duration": "[soma] x 10 minutos"
     },
     {
         "name": "Amuleto da Mão Aberta",
@@ -242,6 +253,15 @@ export const SPELLS = [
             "Essas presas podem tirar o veneno de alguém envenenado, e armazer o veneno para distribuir depois por um ataque."
         ],
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Bis",
+        "school": "Psicomancia",
+        "description": [
+            "O alvo precisa passar em um teste de resistência ou repete sua última ação enquanto a magia durar."
+        ],
+        "range": "Visão",
+        "duration": "[dados] rodadas"
     },
     {
         "name": "Bode Expiatório",
@@ -414,6 +434,29 @@ export const SPELLS = [
         ],
         "range": "10 metros",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Comando",
+        "school": "Psicomancia",
+        "description": [
+            "O alvo precisa fazer um teste de resistência (se tiver mais de 1 DV) e, caso falhe, o lançador da magia tem duas opções:",
+            {
+                "ul": [
+                    "Dar uma ordem de [dados] palavras, que pode factivelmente ser feita em um gesto.",
+                    "Dar [dados] ordens de 1 palavra, todas quais podem factivelmente ser feitas em um gesto."
+                ]
+            },
+            "O alvo precisa obedecer, independente da escolha."
+        ],
+        "range": "20 metros"
+    },
+    {
+        "name": "Compreensão",
+        "school": "Psicomancia",
+        "description": [
+            "O alvo entende qualquer criatura e quebra quaisquer códigos. Se investir 4 dados ou mais e escrever seu Sigilo, o efeito vira permanente mas, sobrecarregado com todos os sinais pra interpretar, o alvo sempre se move por último em batalha."
+        ],
+        "duration": "[soma] x 10 minutos"
     },
     {
         "name": "Conduíte",
@@ -695,6 +738,14 @@ export const SPELLS = [
         "duration": "Sigilo"
     },
     {
+        "name": "Esquecer Mesmo",
+        "school": "Psicomancia",
+        "description": [
+            "Você descarta [dados] espaços da sua Psique.",
+            "Se descartar um Trauma desse jeito, você ganha 3 pontos de Catástrofe."
+        ]
+    },
+    {
         "name": "Estática",
         "school": "Translocação",
         "description": [
@@ -754,6 +805,26 @@ export const SPELLS = [
         "range": "30 metros"
     },
     {
+        "name": "Explosão Telecinética",
+        "school": "Psicomancia",
+        "description": [
+            "Um objeto ou criatura dentro do alcance é jogado pelo ar, a menos que passe em um teste de resistência.",
+            "Uma criatura de tamanho humano viaja [dados] x 4 metros em linha reta e toma 1d6 por 4 metros viajados. Uma criatura jogada em outra criatura faz um teste de ataque e, se acertar, causa 1d6 de dano por 4 metros viajados.",
+            "A magia também abre todas as portas destrancadas da sala ou quebra todas as janelas na sala."
+        ],
+        "range": "20 metros"
+    },
+    {
+        "name": "Extrair Memória",
+        "school": "Psicomancia",
+        "description": [
+            "Uma criatura que você toque tem que passar em um teste de resistência ou você pode remover até [soma] horas da memória dela.",
+            "Se ela consentir, você pode remover até 1 semana de memórias para cada rodada de contato.",
+            "As memórias roubadas ocupam um espaço da sua Psique."
+        ],
+        "range": "Toque"
+    },
+    {
         "name": "Fala da Tormenta",
         "school": "Elementalismo",
         "description": [
@@ -761,6 +832,16 @@ export const SPELLS = [
             "Se investir 4 dados ou mais, o efeito se torna permanente mas uma Catástrofe acontece."
         ],
         "duration": "[dados] horas"
+    },
+    {
+        "name": "Fala Infalavel",
+        "school": "Psicomancia",
+        "description": [
+            "Um alvo sob esse efeito é incapaz de falar com qualquer coisa ou criatura com quem já conseguia falar.",
+            "O alvo pode fazer 4 - [dados] tentativas de se libertar do efeito antes do fim da duração fazendo um teste de resistência."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Falar com Pássaros",
@@ -871,6 +952,16 @@ export const SPELLS = [
         "duration": "[dados] semanas"
     },
     {
+        "name": "Halucinogênese",
+        "school": "Psicomancia",
+        "description": [
+            "Você imbui uma flor ou fungo com imagens mentais e ela floresce, espalhando seus esporos em um raio de [dados] x 4 metros. Qualquer criatura respirante que entrar na zona e falhar um teste de resistência vai halucinar uma cena predeterminada de 10 minutos.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, a duração se torna permanente."
+        ],
+        "range": "20 metros",
+        "duration": "1 hora"
+    },
+    {
         "name": "Hibernação",
         "school": "Fisiúrgia",
         "description": [
@@ -920,6 +1011,17 @@ export const SPELLS = [
         "school": "Truques",
         "description": [
             "Você comanda uma corda a amarrar [dados] criaturas juntas. As vítimas tem que estar dentro do alcance da corda e podem evitar ser amarradas se passarem em um teste de resistência."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Laço do Destino",
+        "school": "Psicomancia",
+        "description": [
+            "Você estabelece um laço psíquico com o alvo. Quando um dos dois perde PVs, o outro também perde, mas pode fazer um teste de resistência para só perder metade.",
+            "Se uma criatura morrer, a outra deve fazer um teste de resistência ou fica com 0 PVs. Os dois estão vagamente cientes da posição do outro e o que o outro está fazendo.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo no alvo, o efeito se torna permanente."
         ],
         "range": "10 metros",
         "duration": "[dados] x 10 minutos"
@@ -1054,6 +1156,16 @@ export const SPELLS = [
         ],
         "range": "40 metros",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Mente Vazia",
+        "school": "Psicomancia",
+        "description": [
+            "O alvo se torna imune a magias da escola de Psicomancia pela duração da magia. Caso esteja sobre o efeito de alguma tal magia, esse efeito acaba.",
+            "Se investir 4 ou mais dados e escrever seu Sigilo no alvo, o efeito se torna permanente e o alvo ganha 1 Trauma (Isolação). Esse Trauma é irremovível enquanto o efeito de Mente Vazia estiver funcionando."
+        ],
+        "range": "Toque",
+        "duration": "[dados] minutos"
     },
     {
         "name": "Metal para Chama",
@@ -1226,6 +1338,16 @@ export const SPELLS = [
         "duration": "[dados] x 2 rodadas"
     },
     {
+        "name": "Pó de Morfeu",
+        "school": "Psicomancia",
+        "description": [
+            "Um pó conjurado da terra dos sonhos cobre uma pequena área, [soma] criaturas vão dormir se não passarem em um teste de resistência.",
+            "Se investir 4 ou mais dados, a duração vira \"até o nascer do sol\"."
+        ],
+        "range": "10 metros",
+        "duration": "10 minutos"
+    },
+    {
         "name": "Portal",
         "school": "Translocação",
         "description": [
@@ -1339,6 +1461,15 @@ export const SPELLS = [
             }
         ],
         "range": "Toque"
+    },
+    {
+        "name": "Recipiente Empático",
+        "school": "Psicomancia",
+        "description": [
+            "Todos os efeitos emocionais (medo, raiva, tristeza, prazer, dor, traumas) do alvo são transferidos para a Psique de [dados] outros alvos, distribuídos à escolha do lançador da magia até o fim da magia."
+        ],
+        "range": "10 metros",
+        "duration": "[soma] rodadas (combate) ou minutos (fora de combate)"
     },
     {
         "name": "Redimensionar",
@@ -1505,6 +1636,14 @@ export const SPELLS = [
         "duration": "1 hora"
     },
     {
+        "name": "Somnofagia",
+        "school": "Psicomancia",
+        "description": [
+            "Um alvo que está dormindo toma [soma] pontos de dano e você se recupera pela mesma quantidade. A única memória deles do sonho vai ser a sua silhueta."
+        ],
+        "range": "Visão"
+    },
+    {
         "name": "Sonhar",
         "school": "Hekafísica",
         "description": [
@@ -1556,6 +1695,14 @@ export const SPELLS = [
         ]
     },
     {
+        "name": "Taumaturgia",
+        "school": "Psicomancia",
+        "description": [
+            "Você se torna impossível de ignorar. O ambiente muda ligeiramente de acordo com suas emoções (portas batem, luzes apagam, etc.). Se investir 4 dados ou mais a duração se torna permanente."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Teia",
         "school": "Animorfose",
         "description": [
@@ -1563,6 +1710,16 @@ export const SPELLS = [
             "Se investir 4 ou mais dados, pode ver tudo que toca na teia, mesmo se estiver em outro lugar."
         ],
         "range": "20 metros"
+    },
+    {
+        "name": "Telepatia",
+        "school": "Psicomancia",
+        "description": [
+            "Você e [dados] outras criaturas estão telepaticamente conectadas e podem conversar mentalmente pela duração da magia, contanto que estejam no mesmo plano de existência.",
+            "Se investir 4 dados ou mais nessa magia e escrever seu Sigilo na sua cabeça, o efeito se torna permanente."
+        ],
+        "range": "[dados] x 20 metros",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Teletransporte",
@@ -1620,6 +1777,16 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[dados] horas"
+    },
+    {
+        "name": "Trocar Sentidos",
+        "school": "Psicomancia",
+        "description": [
+            "Escolha 2 dos 5 sentidos. O alvo troca os dois durante a duração da magia, por exemplo, ela vê através da audição ou sente cheiros através do toque.",
+            "Se um ataque funciona através de um dos sentidos trocados (como um olhar petrificante) o ataque falha. Se investir 4 dados ou mais e escrever o Sigilo no alvo, o efeito se torna permanente."
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 10 minutos"
     },
     {
         "name": "Tudo Adjacente",
@@ -1696,6 +1863,16 @@ export const SPELLS = [
             "Se investiu 4 dados ou mais, e escrever seu Sigilo na sua pele, a duração se torna permanente."
         ],
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Visão Fascinante",
+        "school": "Psicomancia",
+        "description": [
+            "Pela duração dessa magia, todos que fizerem contato visual devem fazer um teste de resistência. Quem falhar fica fascinado e incapaz de agir enquanto você manter contato visual e não fizer nada além de falar.",
+            "Alvos vão responder [dados] perguntas básicas de sim ou não honestamente, mas questões que precisam de respostas mais complicadas não vão ser entendidas, e memórias do episódio vão ser incertas e genéricas."
+        ],
+        "range": "10 metros",
+        "duration": "[soma] minutos"
     },
     {
         "name": "Zoofobia",
