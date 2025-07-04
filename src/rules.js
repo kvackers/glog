@@ -30,7 +30,7 @@ export function Rules() {
         <p>Você tem tantos <strong>Pontos de Vida (PV)</strong> quanto sua FOR.</p>
 
         <p>Você tem um <strong>Inventório</strong> tão grande quanto o dobro de sua FOR,
-        e uma <strong>Psique</strong> tão grande quanto o dobre de sua VON.</p>
+        e uma <strong>Psique</strong> tão grande quanto o dobro de sua VON.</p>
 
         <p>Escolha uma <strong>Classe</strong>, adicione o equipamento inicial ao seu Inventório e 
         as <strong>Perícias</strong> e <strong>Magias</strong> (se houverem) à sua Psique. A cada nível de Classe que você toma,
