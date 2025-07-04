@@ -27,56 +27,42 @@ export function Classes() {
     const makeActive = name => setClass(name);
 
     return html`
-        <ul class="nav nav-pills">
-        <li class="nav-item">
-                <a class="nav-link ${isActive("wizardA")}" href="#"
-                   onclick=${() => makeActive("wizardA")}>
-                   Arcanista
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("geralA")}" href="#"
-                   onclick=${() => makeActive("geralA")}>
-                   Bárbaro
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("wizardB")}" href="#"
-                   onclick=${() => makeActive("wizardB")}>
-                   Clérigo
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("faunaA")}" href="#"
-                   onclick=${() => makeActive("faunaA")}>
-                   Elfo
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("fighterA")}" href="#"
-                   onclick=${() => makeActive("fighterA")}>
-                   Guerreiro
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("geralB")}" href="#"
-                   onclick=${() => makeActive("geralB")}>
-                   Ladino
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("fighterB")}" href="#"
-                   onclick=${() => makeActive("fighterB")}>
-                   Ogro
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ${isActive("faunaB")}" href="#"
-                   onclick=${() => makeActive("faunaB")}>
-                   Profundo
-                </a>
-            </li>
-        </ul>
+        <div class="btn-group w-100" role="group">
+                <button class="btn btn-outline-secondary header mb-1 w-25"
+                        onclick=${() => makeActive("wizardA")}>
+                    Arcanista
+                </button>
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("geralA")}>
+                    Bárbaro
+                </button>
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("wizardB")}>
+                    Clérigo
+                </button>   
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("faunaA")}>
+                    Elfo
+                </button>            
+        </div>
+        <div class="btn-group w-100" role="group">
+                <button class="btn btn-outline-secondary header mb-1 w-25"
+                        onclick=${() => makeActive("fighterA")}>
+                    Guerreiro
+                </button>
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("geralB")}>
+                    Ladino
+                </button>
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("fighterB")}>
+                    Ogro
+                </button>   
+                <button class="btn btn-outline-secondary header mb-1  w-25"
+                        onclick=${() => makeActive("faunaB")}>
+                    Profundo
+                </button>            
+        </div>
         <hr />
         
         <section class="${displayClass("fighterA")} pb-3">
@@ -570,7 +556,7 @@ export function Classes() {
         </section>
         
         <section class="${displayClass("faunaB")} pb-3">
-            <h2>Profundos</h2>
+            <h2>Profundo</h2>
 
             <h4>Equipamento Inicial:</h4>
             <ul>
