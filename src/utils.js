@@ -72,9 +72,10 @@ export const SPELL_SCHOOLS = [
     { school: "Arcana Ardilosa", description: 'Maldições antigas e magias da natureza' },
     { school: "Elementalismo", description: 'Magias que lidam com os espíritos da terra' },
     { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
+    { school: "Hekafísica", description: "O estudo e a manipulação da magia em si" },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
     { school: "Truques", description: 'A arte de encantar objetos do dia-a-dia de modo utilitário' },
-    { school: "Vivimancia", description: 'A ciência da carne, crescimento e evolução' }
+    { school: "Vivimancia", description: 'A ciência da carne, crescimento e evolução' },
 ]
 
 export const SPELLS = [
@@ -261,6 +262,14 @@ export const SPELLS = [
         "range": "10 metros"
     },
     {
+        "name": "Calcular Probabilidade",
+        "school": "Hekafísica",
+        "description": [
+            "Role [dados]d20 e escreva os resultados. Enquanto a magia durar você pode mudar o resultado de qualquer d20 com um dos números escritos. Você pode fazer isso uma vez por número escrito."
+        ],
+        "duration": "1 hora"
+    },
+    {
         "name": "Caminhada das Sombras",
         "school": "Arcana Ardilosa",
         "description": [
@@ -407,6 +416,15 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Conduíte",
+        "school": "Hekafísica",
+        "description": [
+            "Você pode usar outra pessoa ou coisa como um conduíte para magias usando [dados] dados ou menos. Seu Sigilo deve ser escrito no conduíte.",
+            "Contanto que o Sigilo continue lá, você pode meditar e perceber seus arredores."
+        ],
+        "duration": "Sigilo"
+    },
+    {
         "name": "Contorção",
         "school": "Animorfose",
         "description": [
@@ -504,6 +522,15 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Descriar",
+        "school": "Hekafísica",
+        "description": [
+            "Você descria algo criado por magica. Se lançada com 1 ou 2 dados, precisa ter sido criado [dados] rodadas atrás, caso contrário não tem limite de tempo. Se for um objeto ou efeito de magia, ele some.",
+            "Se for usado em uma criatura criada por magia, morre se falhar no teste de resistência. Se lançar com 4 ou mais dados, a criatura não tem direito a um teste."
+        ],
+        "range": "10 metros"
+    },
+    {
         "name": "Desintegrar",
         "school": "Translocação",
         "description": [
@@ -518,6 +545,15 @@ export const SPELLS = [
         "description": [
             "Misture óleo e água em um prato raso enquanto roga ao Destino, Sorte e aos Deuses para salvar uma vítima de uma maldição ou alguma magia negativa. A vítima pode ser uma criatura, objeto ou área. Role 1d4. Se o resultado for menor ou igual a [dados] a maldição vai ser curada. Se não, só vai ser curada depois que a vítima (ou lançador da magia, se a vítima for um item ou local) cumprir um ato específico determinado pelo GM."
         ]
+    },
+    {
+        "name": "Desquebrar",
+        "school": "Hekafísica",
+        "description": [
+            "Você repara dano causado por magia nas últimas [dados] rodadas, pode remontar objetos destruídos por magia.",
+            "Se usado em uma criatura que não está Morrendo, cura até [soma] PV."
+        ],
+        "range": "10 metros"
     },
     {
         "name": "Destruição Profetizada",
@@ -642,6 +678,13 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Escudo",
+        "school": "Hekafísica",
+        "description": [
+            "Você conjura pedaços de metal, madeira, detritos em geral para te proteger, reduzindo dano em [soma] pontos de dano. Essa magia pode ser lançada em resposta a ataques."
+        ]
+    },
+    {
         "name": "Espelho de Heka",
         "school": "Apotropaísmo",
         "description": [
@@ -677,6 +720,22 @@ export const SPELLS = [
         ],
         "range": "20 metros",
         "duration": "[dados] horas"
+    },
+    {
+        "name": "Excitação",
+        "school": "Hekafísica",
+        "description": [
+            "Você gera um choque de energia de alta frequência que excita os DMs gastos do alvo, recuperando [dados] DMs no alvo.",
+            "Se não forem gastos até o fim da sua próxima rodada, eles caem de volta ao seu estado fundamental e causam um dos efeitos a seguir, a escolha do alvo:",
+            {
+                "ol": [
+                    "O alvo ganha [soma] pontos de Destruição e precisa fazer um teste de Catástrofe",
+                    "O alvo sofre uma mutação aleatória",
+                    "O alvo sofre uma maldição aleatória"
+                ]
+            }
+        ],
+        "range": "Toque"
     },
     {
         "name": "Explodir Álcool",
@@ -822,6 +881,16 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Ilusão",
+        "school": "Hekafísica",
+        "description": [
+            "Você cria uma ilusão de um objeto ou criatura a sua escolha, até o tamanho de uma carruagem. Pode se mexer a sua vontade, mas não cria som ou cheiro. Ilusões podem acrescentar mas não subtrair (ou seja, você pode tapar um buraco mas não criar um buraco).",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "Visão",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Imagem Espelhada",
         "school": "Translocação",
         "description": [
@@ -901,6 +970,16 @@ export const SPELLS = [
         "duration": "10 minutos"
     },
     {
+        "name": "Limiar Etéreo",
+        "school": "Hekafísica",
+        "description": [
+            "Você está cercado por um campo que perturba magia, e é etereamente opaco e impassável.",
+            "Essa barreira bloqueia qualquer efeito mágico entrando ou saindo, mas precisa de um teste para impedir magias lançadas com mais de [dados] DMs.",
+            "Um número de pessoas igual a [dados] podem ser abrigados na barreira, e a barreira bloqueia criaturas etéras com [dados] DV ou menos."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Luz de Aviso",
         "school": "Apotropaísmo",
         "description": [
@@ -921,6 +1000,15 @@ export const SPELLS = [
         "duration": "[dados] x horas"
     },
     {
+        "name": "Maleficência",
+        "school": "Hekafísica",
+        "description": [
+            "Sua maleficência é única e reflete sua própria essência. Escolha um tipo de dano quando aprender essa magia.",
+            "Quando lançar a magia, você causa [dados] + [soma] dano em um alvo."
+        ],
+        "range": "30 metros"
+    },
+    {
         "name": "Mão Branca da Disciplina",
         "school": "Apotropaísmo",
         "description": [
@@ -938,6 +1026,25 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Marca Arcana",
+        "school": "Hekafísica",
+        "description": [
+            "Você põe o seu sigilo em um objeto ou criatura. Escolha [dados] das opções abaixo:",
+            {
+                "ul": [
+                    "Você sempre a distância entre você e o alvo.",
+                    "O alvo sempre está adjacente a você pra fins de magias.",
+                    "O alvo conta como você pra fins de magias.",
+                    "O alvo vai tomar [soma] danos e 1 Trauma (Você) se revelar seu nome.",
+                    "O alvo vai ficar ciente se você entrar em perigo",
+                    "Você vai saber se o alvo fizer uma ação específica que você descrever"
+                ]
+            }
+        ],
+        "range": "Toque",
+        "duration": "Sigilo"
     },
     {
         "name": "Mensagem do Vento",
@@ -964,6 +1071,15 @@ export const SPELLS = [
         "description": [
             "Você conjura [soma] velas flutuantes acesas ao seu redor. Cada uma se comporta como uma vela normal, mas não podem ser apagadas, têm tamanho constante e vão queimar até mesmo debaixo d'água.",
             "Elas podem ser facilmente coladas em uma superfície sólida imóvel, e se forem, duram 1 hora. As velas só iluminam 4 metros."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Mortalha",
+        "school": "Hekafísica",
+        "description": [
+            "Você se torna invisível para criaturas mortais mas vira um farol brilhante para seres com Visão Arcana, criaturas incorpóreas e criaturas do mundo espiritual em geral.",
+            "Enquando usar a Mortalha, você existe parcialmente nos dois mundos, e pode ser machucado em ambos."
         ],
         "duration": "[dados] x 10 minutos"
     },
@@ -1197,6 +1313,16 @@ export const SPELLS = [
         ]
     },
     {
+        "name": "Radiância",
+        "school": "Hekafísica",
+        "description": [
+            "Você transforma uma fonte de luz em uma bola radiante de luz astral brilhando em todas as criaturas até 6 metros dela. Elas tomam [soma] dano e precisam fazer um teste de resistência ou ficar Atordoados por [dados] rodadas. A fonte de luz então fica escura e inutilizada por [dados] rodadas.",
+            "Se 4 ou mais dados forem usados, e seu Sigilo for escrito, a explosão se torna permanente e pode ser usado como um portal pro plano astral se o viajante sobreviver a irradiação."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Reanimar",
         "school": "Fisiúrgia",
         "description": [
@@ -1359,6 +1485,16 @@ export const SPELLS = [
         "duration": "1 hora"
     },
     {
+        "name": "Silêncio",
+        "school": "Hekafísica",
+        "description": [
+            "Toda a área no alcance fica magicamente quieta. Nenhum som é produzido na esfera, nem pode entrar nela.",
+            "Você pode mover o centro da esfera para qualquer lugar no seu campo de visão e mudar o raio (sem ultrapassar 10 metros) conforme você quiser"
+        ],
+        "range": "10 metros",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
         "name": "Singularidade de Propósito",
         "school": "Animorfose",
         "description": [
@@ -1367,6 +1503,41 @@ export const SPELLS = [
         ],
         "range": "20 metros",
         "duration": "1 hora"
+    },
+    {
+        "name": "Sonhar",
+        "school": "Hekafísica",
+        "description": [
+            "Essa magia pode ser lançada em qualquer criatura de qual você tenha algo representativo (roupas usadas, um item favorito, uma gota de sangue, uma mecha de cabelo, etc.) ou que está marcada com o seu Sigilo.",
+            "Você entra em um trance que dura até você quebrar concentração. Quando seu alvo dormir, você entra nos sonhos dele por [soma] minutos. Você pode conversar livremente e trocar informação no sonho, e após acordar, o alvo precisa fazer um teste para se lembrar ou vai esquecer a conversa. Você se lembra automaticamente.",
+            "Você pode atacar o alvo no sonho, causando um pesadelo. O primeiro a chegar a 0 PV no sonho acorda abruptamente, e não ganha um benefício de Descanso."
+        ]
+    },
+    {
+        "name": "Sorte Concentrada",
+        "school": "Hekafísica",
+        "description": [
+            "O alvo rola o máximo em todos os dados na duração, anotando quantas vezes esse efeito ativo ([adulterados]).",
+            "Quando acabar o efeito, o alvo tem duas opções:",
+            {
+                "ul": [
+                    "Tomar [adulterados] pontos de Destruição e fazer um teste de Catástrofe.",
+                    "Rolar o mínimo nos próximos [adulterados] dados"
+                ]
+            }
+        ],
+        "range": "Toque",
+        "duration": "[dados] x 2 rodadas"
+    },
+    {
+        "name": "Spray de Cor",
+        "school": "Hekafísica",
+        "description": [
+            "Você cria flashes de cor rápidos em um cone. [dados] + 1 criatura com olhos no cone ficam Atordoados pela duração da magia.",
+            "Se investir 4 dados ou mais, [dados] - 4 criaturas com olhos no cone ficam Pasmos por [dados] - 4 rodadas."
+        ],
+        "range": "10 metros",
+        "duration": "[dados] + 1d6 rodadas"
     },
     {
         "name": "Spray de Tinta",
@@ -1514,6 +1685,16 @@ export const SPELLS = [
             "Dano ou mudanças feitas na obra acabam a magia, mas se retém no alvo. Investir 4 dados ou mais e assinar seu Sigilo fazem o efeito ser permanente."
         ],
         "range": "Toque",
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Visão Arcana",
+        "school": "Hekafísica",
+        "description": [
+            "Para usuários, lançadores de magia irradiam a presença de suas magias conhecidas e itens encantados brilham com o vazamento de magia. Encantamentos específicos revelam aspectos de sua natureza.",
+            "Coisas Invisíveis e etéreas podem ser vistas.",
+            "Se investiu 4 dados ou mais, e escrever seu Sigilo na sua pele, a duração se torna permanente."
+        ],
         "duration": "[dados] x 10 minutos"
     },
     {
