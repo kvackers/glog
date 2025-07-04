@@ -74,6 +74,7 @@ export const SPELL_SCHOOLS = [
     { school: "Fisiúrgia", description: 'Remédios, curas tradicionais e magias de sangue' },
     { school: "Translocação", description: 'A manipulação paradoxical do espaço e do tempo' },
     { school: "Truques", description: 'A arte de encantar objetos do dia-a-dia de modo utilitário' },
+    { school: "Vivimancia", description: 'A ciência da carne, crescimento e evolução' }
 ]
 
 export const SPELLS = [
@@ -198,6 +199,16 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Bala de Veneno",
+        "school": "Vivimancia",
+        "description": [
+            "Você conjura uma esfera de veneno líquido e joga em uma criatura. Essa criatura precisa fazer um teste de resistência. Se falhar toma [soma] dano de veneno, se passar toma [dados] dano.",
+            "Se a criatura já estiver ferida, agora ela está envenenada."
+        ],
+        "range": "20 metros",
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Barganhar",
         "school": "Translocação",
         "description": [
@@ -210,6 +221,24 @@ export const SPELLS = [
         "school": "Elementalismo",
         "description": [
             "Você invoca ventos para defletir pequenos mísseis como flechas e lanças. A magia se move com você e pode abrigar [dados] pessoas. Mísseis que saem de dentro da barreira também são impedidos."
+        ],
+        "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Bater no Peito",
+        "school": "Vivimancia",
+        "description": [
+            "Você bate no peito violentamente enquanto grita. Você toma [dados] pontos de dano e seus ataques corpo-a-corpo vão inflingir [soma] pontos de dano extra.",
+            "Você vai precisar comer [dados] rações extra hoje."
+        ],
+        "duration": "10 minutos"
+    },
+    {
+        "name": "Beijo da Serpente",
+        "school": "Vivimancia",
+        "description": [
+            "Depois de lançar a magia, você cresce presas longas e ocas, que podem ser usadas como arma natural (1d6 de dano).",
+            "Essas presas podem tirar o veneno de alguém envenenado, e armazer o veneno para distribuir depois por um ataque."
         ],
         "duration": "[dados] x 10 minutos"
     },
@@ -751,6 +780,15 @@ export const SPELLS = [
         "range": "Visão"
     },
     {
+        "name": "Fumigar",
+        "school": "Vivimancia",
+        "description": [
+            "Uma nuvem de gás tóxica sai do lançador. Cada criatura que respira em alcance até o tamanho de um gato tomam [soma] pontos de dano, dissipando em fumaça se mortos dessa maneira.",
+            "Demais criaturas que respiram tomam [dados] pontos de dano. Criaturas excepcionais ou mágicas podem fazer um teste para tomar metade do dano."
+        ],
+        "range": "10 metros"
+    },
+    {
         "name": "Geas",
         "school": "Arcana Ardilosa",
         "description": [
@@ -1100,6 +1138,17 @@ export const SPELLS = [
         "duration": "[dados] x 10 minutos"
     },
     {
+        "name": "Preguiça",
+        "school": "Vivimancia",
+        "description": [
+            "Todos dentro do alcance ficam letárgicos, fazendo atingir, esquivar e fugir deles uma tarefa fácil.",
+            "Criaturas com [dados] DV ou menos são afetadas automaticamente, e as demais podem fazer um teste para resistir.",
+            "Você pode isentar [dados] criaturas do efeito, e a magia pode ser lançada em mecanismos ou outras coisas que envolvam um progresso ou mudança."
+        ],
+        "range": "Visão",
+        "duration": "[dados] rodadas"
+    },
+    {
         "name": "Presas Venenosas",
         "school": "Animorfose",
         "description": [
@@ -1138,6 +1187,14 @@ export const SPELLS = [
         ],
         "range": "Visão",
         "duration": "[dados] rodadas"
+    },
+    {
+        "name": "Queimadura Calórica",
+        "school": "Vivimancia",
+        "description": [
+            "Você solta vapor do seu corpo enquanto você perde peso. Você pode fazer 1 + [dados] ataques corpo-a-corpo esse turno.",
+            "Você precisa comer [dados] rações extras hoje. Se tem espaços de inventório ocupados por Músculos, pode perder Músculos invés de comer rações extras."
+        ]
     },
     {
         "name": "Reanimar",
@@ -1223,6 +1280,16 @@ export const SPELLS = [
         "duration": "1 semana"
     },
     {
+        "name": "Roubar Membro",
+        "school": "Vivimancia",
+        "description": [
+            "Você troca partes corporais com uma criatura, desde que vocês dois tenham as partes escolhidas (olhos, nariz, mãos, etc.). Criaturas que não consistam podem fazer um teste de resistência para evitar.",
+            "Se investir 4 dados ou mais e escrever seu Sigilo, o efeito se torna permanente."
+        ],
+        "range": "Toque",
+        "duration": "[soma] x 10 minutos"
+    },
+    {
         "name": "Sacrifício ao Sol",
         "school": "Apotropaísmo",
         "description": [
@@ -1248,6 +1315,17 @@ export const SPELLS = [
             "Tem uma chance de 1 em 6 que o espírito peça um favor em troca depois de freiar a queda."
         ],
         "range": "20 metros"
+    },
+    {
+        "name": "Sede de Sangue",
+        "school": "Vivimancia",
+        "description": [
+            "A magia acorda a besta interior, criando garras e presas, dando um bônus de [dados] para ataque, dano e armadura. Alvos que não consintam podem fazer um teste para resistir o efeito.",
+            "Qualquer criatura assim precisa atacar um combatente a cada rodada com um ataque corpo-a-corpo.",
+            "Quando a magia acabar, o alvo faz um teste de resistência e desmaia se o falhar."
+        ],
+        "range": "20 metros",
+        "duration": "10 minutos"
     },
     {
         "name": "Selo de Retribuição",
@@ -1342,6 +1420,15 @@ export const SPELLS = [
         "duration": "1 dia"
     },
     {
+        "name": "Transcendência",
+        "school": "Vivimancia",
+        "description": [
+            "Você grava seu Sigilo no seu corpo e faz uma declaração sobre seu corpo, dizendo [dados] fatos.",
+            "Você não pode adicionar membros (mas pode trocar um membro por outro), massa ou te fazer imune a algum tipo de dano, nem fazer declarações comparativas (mais, menos, tanto quanto, etc.). Os fatos agora são verdadeiros."
+        ],
+        "duration": "Sigilo"
+    },
+    {
         "name": "Transmitir Fôlego",
         "school": "Translocação",
         "description": [
@@ -1351,6 +1438,17 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "[dados] x 10 minutos"
+    },
+    {
+        "name": "Transplante",
+        "school": "Vivimancia",
+        "description": [
+            "Você pode transplantar até [dados] partes orgânicas soltas (braços, pernas, orelhas, etc.) em um alvo e ter essas partes funcionarem pela duração.",
+            "Alvos que não consintam podem fazer um teste para resistir. Quando acabar a duração, o alvo toma [dados] pontos de dano não letal para cada parte transplantada, que apodrece.",
+            "A duração da magia poder ser permanente se escrever seu Sigilo no alvo."
+        ],
+        "range": "Toque",
+        "duration": "[dados] horas"
     },
     {
         "name": "Tudo Adjacente",
@@ -1371,6 +1469,15 @@ export const SPELLS = [
         "range": "10 metros"
     },
     {
+        "name": "Velocidade",
+        "school": "Vivimancia",
+        "description": [
+            "Você escreve seu Sigilo em uma pessoa ou mecanismo e em qualquer ponto do futuro, quando ver o alvo, pode acelerar seus movimentos deixando ele fazer [dados] ações adicionais em um turno.",
+            "Em seguida, role 1d6. Se rolar 1, o alvo fica Exausto se for uma pessoa, e quebra se for um mecanismo."
+        ],
+        "duration": "Sigilo"
+    },
+    {
         "name": "Vidência",
         "school": "Arcana Ardilosa",
         "description": [
@@ -1389,6 +1496,15 @@ export const SPELLS = [
         ],
         "range": "Toque",
         "duration": "1 dia"
+    },
+    {
+        "name": "Vigor do Touro Alado",
+        "school": "Vivimancia",
+        "description": [
+            "Você imbui [dados] criaturas com energia não natural, os dando os benefícios de uma noite de sono ruim. Eles se recuperam de Exaustão, mas usuários de Magia não recuperam seus DMs.",
+            "Cada um deles ganham [dados] PVs temporários, mas tomam [dados] pontos de dano quando acordarem de um descanso de verdade."
+        ],
+        "range": "Toque"
     },
     {
         "name": "Virar Arte",
