@@ -49,7 +49,7 @@ function SpellsBySchools() {
     <div class="d-flex pt-3 pb-3 btn-toolbar justify-content-around">
         ${SPELL_SCHOOLS.map(e => {
         return html`
-            <button class="btn btn-outline-primary header mb-2"
+            <button class="btn btn-outline-secondary header mb-2"
                     onclick=${() => setSchool(e.school)}>
                 ${e.school}
             </button>`;
@@ -80,7 +80,7 @@ export function Spells() {
     return html`
         <div class="d-flex justify-content-between">
             <h2>${spellHeader}</h2>
-            <button type="button" class="btn btn-outline-primary" onclick=${toggleSpellType}>🔄</button>
+            <button type="button" class="btn btn-outline-secondary" onclick=${toggleSpellType}>🔄</button>
         </div>
         ${spellElems}
 
