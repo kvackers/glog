@@ -117,13 +117,13 @@ export function Sheet() {
 
     const setInventory = inv => setSheet({ ...sheet, inventory: inv.split('\n').filter(s => s.length > 0) });
     const setExtraInventorySlots = extra => {
-        const inventoryCapacity = sheet.str + extra;
+        const inventoryCapacity = sheet.str + 2 * extra;
         setSheet({ ...sheet, inventoryCapacity });
     };
 
     const setPsyche = psyche => setSheet({ ...sheet, psyche: psyche.split('\n').filter(s => s.length > 0) });
     const setExtraPsycheSlots = extra => {
-        const psycheCapacity = sheet.will + extra;
+        const psycheCapacity = sheet.will + 2 * extra;
         setSheet({ ...sheet, psycheCapacity });
     }
 
@@ -255,7 +255,7 @@ export function Sheet() {
     <hr />
 
     <details class="mb-3">
-        <summary>Inventório (${sheet.inventoryCapacity === sheet.str ? "FOR" : "FOR + " + (sheet.inventoryCapacity - sheet.str)
+        <summary>Inventório (2 x ${sheet.inventoryCapacity === sheet.str ? "FOR" : "FOR + " + (sheet.inventoryCapacity - sheet.str)
         }: ${sheet.inventoryCapacity})</summary >
 
         <div class="input-group my-2">
@@ -277,7 +277,7 @@ export function Sheet() {
                   value=${sheet.inventory.slice(sheet.inventoryCapacity).join('\n')}></textarea>
     </details>
     <details class="mb-3">
-        <summary>Psique (${sheet.psycheCapacity === sheet.will ? "VON" : "VON + " + (sheet.psycheCapacity - sheet.will)
+        <summary>Psique (2 x ${sheet.psycheCapacity === sheet.will ? "VON" : "VON + " + (sheet.psycheCapacity - sheet.will)
         }: ${sheet.psycheCapacity})</summary >
 
         <div class="input-group my-2">
