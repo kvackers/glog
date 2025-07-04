@@ -17,8 +17,39 @@ export function impureSetTheme(preference) {
 
 export const DEFAULT_UI_STATE = {
     theme: readThemePreference(),
-    tab: "rules"
+    tab: "sheet"//"rules"
 };
+
+export const DEFAULT_SHEET = {
+    name: "",
+    belief: "",
+    classes: { '-': 0 },
+    nonTemplateLevels: 0,
+    str: 0,
+    dex: 0,
+    will: 0,
+    health: 0,
+    maxHealth: 0,
+    spellDice: 0,
+    maxSpellDice: 0,
+    doomPoints: 0,
+    inventoryCapacity: 0,
+    inventory: [],
+    psycheCapacity: 0,
+    psyche: [],
+    notes: ""
+};
+
+export const CLASSES = [
+    "Arcanista",
+    "Bárbaro",
+    "Clérigo",
+    "Elfo",
+    "Guerreiro",
+    "Ladino",
+    "Ogro",
+    "Profundo"
+];
 
 export const SACRAMENTS = [
     {

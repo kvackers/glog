@@ -7,6 +7,7 @@ import { impureSetTheme, DEFAULT_UI_STATE } from "./utils.js";
 import { Rules } from "./rules.js";
 import { Spells } from "./spells.js";
 import { Classes } from './classes.js';
+import { Sheet } from "./sheet.js";
 
 const html = htm.bind(h);
 
@@ -32,9 +33,11 @@ function App() {
     const [uiState, setUIState] = useState({ ...DEFAULT_UI_STATE });
     useEffect(() => impureSetTheme(uiState.theme), [uiState.theme]);
 
-    const display = uiState.tab === "rules" ? html`<${Rules} />` :
-        uiState.tab === "spells" ? html`<${Spells} />` :
-            html`<${Classes} />`;
+    const display = (
+        uiState.tab === "rules" ? html`<${Rules} />` :
+            uiState.tab === "spells" ? html`<${Spells} />` :
+                uiState.tab === "classes" ? html`<${Classes} />` : html`<${Sheet} />`
+    );
 
     return html`
         <${Navbar} ui=${uiState} setUI=${setUIState} />

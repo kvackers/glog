@@ -30,6 +30,20 @@ diceprog {
     display: block;
 }
 
-w-33 {
-    width: 33%
+.w-33 {
+    width: 33%;
+}
+
+.w-49 {
+    width: 49%;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
