@@ -46,7 +46,7 @@ function SpellsBySchools() {
     const [school, setSchool] = useState("Animorfose");
 
     return html`
-    <div class="btn-group w-100" role="group">
+    <div class="btn-group w-100 mt-2" role="group">
             <button class="btn btn-outline-secondary header mb-1 w-33"
                     onclick=${() => setSchool("Animorfose")}>
                 Animorfose
