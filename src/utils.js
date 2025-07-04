@@ -61,9 +61,52 @@ export const SACRAMENTS = [
             "Cada sessão você ganha 1 DM de graça (que não volta depois de expirado)."
         ],
         spells: [
-            "Projeção Espacial", "Destruição Profetizada", "Rito do Sétimo Dia", "Amuleto da Mão Aberta"
+            "Projeção Espacial", "Destruição Profetizada", "Recipiente Empático", "Amuleto da Mão Aberta"
         ]
     },
+    {
+        name: "Beber o sangue dos seus inimigos",
+        powers: [
+            "Cada vez que alguém te maltratar ou machucar, você pode anotar o evento na sua Psique. Você sabe instintivamente quando se aproxima dessas pessoas.",
+            "Cada vez que conseguir vingança de um dos maus-tratos na sua Psique, você ganha 1 DM (até descansar)"
+        ],
+        spells: [
+            "Retribuição Cósmica", "Comando", "Vigor do Touro Alado", "Castigar os Iníquos"
+        ]
+    },
+    {
+        name: "Beijar os pés da Criança e do Ancião",
+        powers: [
+            "Você ganha 1 Seguidor toda vez que terminar a sessão em uma cidade grande.",
+            "Cada Seguidor que te ajudar no lançamento de magias adiciona meio DM à ela."
+        ],
+        spells: [
+            "Barreira Etérea", "Recipiente Empático", "Rito do Sétimo Dia", "Salvação"
+        ]
+    },
+    {
+        name: "Meditar em isolação",
+        powers: [
+            "Cada sessão você pode fazer uma pergunta de sim ou não ao GM. Você vai conseguir a resposta na próxima sessão.",
+            "No fim da sessão, anote 2 coisas específicas que quer fazer. Na próxima sessão você ganha 1 DM quando fizer essas ações."
+        ],
+        spells: [
+            "Aura de Renovação", "Silêncio", "Indolência", "Selo de Retribuição"
+        ]
+    },
+    {
+        name: "Retornar os mortos à natureza",
+        powers: [
+            "Você consegue apodrecer matéria orgânica com seu toque. Alguns segundos estraga comida, 1 hora consome um cadáver.",
+            "Você ganha 1 DM pelos próximos 10 minutos quando consome um objeto orgânico 1 DM pelo resto do dia quando faz um Rito Funerário",
+        ],
+        spells: [
+            "Apoteóse dos Cordyceps",
+            "Cura Milagrosa",
+            "Halucinogênese",
+            "Reanimar"
+        ]
+    }
 ]
 
 export const SPELL_SCHOOLS = [
